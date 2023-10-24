@@ -1,0 +1,181 @@
+site_name: "SimpleVM Wiki"
+docs_dir: /srv_root/docs/wiki
+site_dir: /var/www/html/wiki
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: 'teal'
+      accent: 'cyan'
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: 'teal'
+      accent: 'cyan'
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+  logo: 'img/SimpleVM_New.svg'
+  favicon: 'img/simplevm_favicon.svg'
+  features:
+    - navigation.top
+    - navigation.indexes
+repo_name: 'deNBI/simplevm-user-docs'
+repo_url: 'https://github.com/deNBI/simplevm-user-docs'
+edit_uri: blob/master/wiki/
+use_directory_urls: true
+site_url: !ENV [SITE_URL, 'https://cloud.denbi.de/wiki/']
+plugins:
+  - search
+  - glightbox
+  - git-revision-date-localized:
+        fallback_to_build_date: true
+  - htmlproofer:
+      enabled: !ENV [ENABLED_HTMLPROOFER,False]
+      raise_error: True
+      raise_error_excludes:
+        -1: ["https://cloud.denbi.de/portal/webapp/#/userinfo","http://169.254.169.254","https://login.elixir-czech.org/oidc/","https://spreg-legacy.aai.elixir-czech.org/spreg/auth/requests/new","https://spreg-legacy.aai.elixir-czech.org/spreg/auth/facilities/myServices","http://BIBIGRID_MASTER/ganglia"]
+        400: ["http://169.254.169.254"]
+        500: ["https://cloud.denbi.de/register", "https://signup.aai.lifescience-ri.eu/fed/registrar/?vo=elixir_test"]
+markdown_extensions:
+  - abbr
+  - attr_list
+  - admonition
+  - codehilite
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: True
+      auto_append:
+        - /srv_root/docs/wiki/includes/glossary.md
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - matomo.js
+  - mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/denbiOffice
+      name: de.NBI on Twitter
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/denbiCloud
+      name: de.NBI Cloud on Twitter
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/de-nbi/
+      name: de.NBI on LinkedIN
+    - icon: fontawesome/brands/github
+      link: https://github.com/deNBI/
+      name: de.NBI on GitHub
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCgZ5PU3CyD4c8yxxzJi130g?view_as=subscriber
+      name: de.NBI on YouTube
+    - icon: fontawesome/brands/wikipedia-w
+      link: https://en.wikipedia.org/wiki/German_Network_for_Bioinformatics_Infrastructure
+      name: de.NBI on Wikipedia
+
+nav:
+  - 'Home' : index.md
+  - 'Registration' : registration.md
+  - 'Citation and publication': citation_and_publication.md
+  - 'Portal' :
+    - 'Allocation': portal/allocation.md
+    - 'Resource/Lifetime Modifications': portal/modification.md
+    - 'Project Termination' : portal/termination.md
+    - 'Project Overview': portal/project_overview.md
+    - 'Profile Page': portal/user_information.md
+    - 'Using Vault': portal/vault_user.md
+    - 'Cloud Credits': portal/credits.md
+    - 'Personal Data': portal/personal_data.md
+  - 'Simple VM':
+      - simple_vm/index.md
+      - 'Group Permissions': simple_vm/permissions.md
+      - 'New instance': simple_vm/new_instance.md
+      - 'Instance overview': simple_vm/instance_overview.md
+      - 'Instance details': simple_vm/instance_detail.md
+      - 'Cluster' :
+          - simple_vm/Cluster/index.md
+          - 'New cluster': simple_vm/Cluster/new_cluster.md
+          - 'Cluster overview': simple_vm/Cluster/cluster_overview.md
+          - 'Cluster detail': simple_vm/Cluster/cluster_detail.md
+      - 'SSH keys and sharing access': simple_vm/keypairs.md
+      - 'Volumes': simple_vm/volumes.md
+      - 'Images/Snapshots': simple_vm/snapshots.md
+      - 'Backup data': simple_vm/backup.md
+      - 'Customization': simple_vm/customization.md
+      - 'Concurrent Guacamole sessions': simple_vm/guacamole.md
+      - 'Concurrent RStudio sessions': simple_vm/rstudio.md
+      - 'Workshops': simple_vm/workshop.md
+      - 'Miscellaneous': simple_vm/misc.md
+  - 'OpenStack Quickstart' : quickstart.md
+  - 'Security' : security.md
+  - 'Concept' :
+    - 'OpenStack Basics' : Concept/basics.md
+    - 'OpenStack Components' : Concept/openstack.md
+    - 'Flavors' : Concept/flavors.md
+    - 'Images' : Concept/images.md
+  - 'Tutorials' :
+    - 'Access de.NBI Virtual Machines from Windows 10' : Tutorials/Win10_SSH/index.md
+    - 'Access a SimpleVM with Mosh' : Tutorials/Mosh/index.md
+    - 'Ansible Automation' : Tutorials/Ansible/index.md
+    - 'Bibigrid' : Tutorials/BiBiGrid/index.md
+    - 'Blast on BiBiGrid' : Tutorials/BlastOnBiBiGrid/index.md
+    - 'Hybridcloud' : Tutorials/Hybridcloud/index.md
+    - 'Install latest CUDA version' : Tutorials/CUDA/index.md
+    - 'JupyterHub' : Tutorials/JupyterHub/index.md
+    - 'Kubermatic' : Tutorials/Kubermatic/index.md
+    - 'Loadbalancer' : Tutorials/Loadbalancer/index.md
+    - 'Object Storage' : Tutorials/ObjectStorage/index.md
+    - 'Public Web Server' : Tutorials/PublicWebServer/index.md
+    - 'Reverse Proxy with Elixir AAI': Tutorials/Elixir_AAI/Elixir_AAI.md
+    - 'Save FloatingIPs' : Tutorials/SaveFloatingIPs/index.md
+    - 'Set up RStudio' : Tutorials/RStudio_Server/index.md
+    - 'Persistent SSH Sessions' : Tutorials/Persistent_SSH_Sessions/index.md
+    - 'SimpleVM File Transfer' : Tutorials/File_Transfer_Methods/index.md
+    - 'Theia Web IDE': Tutorials/TheiaIde/index.md
+    - 'UserData' : Tutorials/UserData/index.md
+    - 'Using X2GO': Tutorials/X2GO/x2go.md
+  - 'FAQ' : 'FAQ.md'
+  - 'Compute Center Specific' :
+    - 'Berlin' : Compute_Center/Berlin.md
+    - 'Bielefeld' : Compute_Center/Bielefeld.md
+    - 'EMBL' : Compute_Center/EMBL.md
+    - 'Freiburg' : Compute_Center/Freiburg.md
+    - 'Giessen' : Compute_Center/Giessen.md
+    - 'Heidelberg Uni' : Compute_Center/Heidelberg.md
+    - 'Heidelberg DKFZ' : Compute_Center/Heidelberg-DKFZ.md
+    - 'Tuebingen' : Compute_Center/Tuebingen.md
+  - 'Cloud Admin':
+    - 'Configure OpenStack to use Elixir AAI via OpenID Connect': cloud_admin/elixir_OIDC.md
+    - 'Register your identity provider for ELIXIR': cloud_admin/identity_provider.md
+    - 'News management': cloud_admin/news_management.md
+    - 'Vault management': cloud_admin/vault_admin.md
