@@ -108,7 +108,7 @@ nav:
   - 'Simple VM':
       - simple_vm/index.md
       - 'Group Permissions': simple_vm/permissions.md
-      - 'New instance': simple_vm/new_instance.md
+      - 'Create Instance': simple_vm/create_instance.md
       - 'Instance overview': simple_vm/instance_overview.md
       - 'Instance details': simple_vm/instance_detail.md
       - 'Cluster' :

@@ -1,22 +1,22 @@
 # Starting a virtual machine
 
-To start a virtual machine, you need to belong to a SimpleVM project.
-If you can't see the “New Instance” button in the sidebar on the left, you either need to reload the page,
-or you don't belong to a SimpleVM project.
+To start a virtual machine, you need to be a member of a SimpleVM project.
+If you can't see the “New Instance” button in the sidebar on the left, you either need to reload the page, you are not member of a SimpleVM project or the administrators of the project do not allow non-administrators to start machines on their own.
 
-A message informs you if you can't start a virtual machine. This can happen if:
+In case you are part of a SimpleVM-project and have the corresponding rights to start a machine, conditions can lead to the case, that starting of virtual machines for a certain project is not possible. This can happen if:
 
-- You haven't enough resources:
+- The resources of a project are used up:
     - Delete running virtual machines to free resources.
-    - An administrator of your project can request more resources. See [Modification request](../portal/modification.md)
-      for more information.
-- Members of your project may not launch virtual machines:
-    - Ask an administrator of your project to start a virtual machine for you.
-    - Ask an administrator of your project to change the appropriate setting.
+    - An administrator of your project can request more resources. 
+
+In case you are a member of a project but are not allowed to start machines:
+
+- Ask an administrator of your project to start a virtual machine for you.
+- Ask an administrator of your project to change the appropriate setting.
 
 ## Mandatory configuration
 
-![overview_one](./img/new_instance/new_instance_overview_one.png)
+![overview_one](./img/create_instance/new_instance_overview_one.png)
 
 ### 1. Selected project
 
@@ -75,7 +75,7 @@ If you want to know more about volumes, see the [Volumes](./volumes.md) wiki pag
 
 #### New volume
 
-![vol_new](./img/new_instance/new_instance_vol_new.png)
+![vol_new](./img/create_instance/new_instance_vol_new.png)
 
 Name your volume.<br>
 Input a mount path.
@@ -85,7 +85,7 @@ Either discard or add the volume to your vm configuration.
 
 #### Attach existing volume
 
-![vol_ex](./img/new_instance/new_instance_vol_ex.png)
+![vol_ex](./img/create_instance/new_instance_vol_ex.png)
 
 Input a mount path.
 This is the absolute path where you may find the volume on your virtual machine.<br>
@@ -95,11 +95,11 @@ Either discard or add the volume to your vm configuration.
 
 After adding a volume, you see an overview of the name, the mount path, and the storage in GB of your chosen volumes:
 
-![vol_done](./img/new_instance/new_instance_vol_done.png)
+![vol_done](./img/create_instance/new_instance_vol_done.png)
 
 ### Conda tools
 
-![conda](./img/new_instance/new_instance_conda.png)
+![conda](./img/create_instance/new_instance_conda.png)
 
 You may choose conda, bioconda, and anaconda tools, which install on your machine at launch.
 To add a tool, you may filter by name, and click the green plus button.<br>
@@ -107,7 +107,7 @@ For more information, see the [customization wiki page](./customization.md#conda
 
 ### Browser-based Research environments
 
-![resenv](./img/new_instance/new_instance_resenv_name.png)
+![resenv](./img/create_instance/new_instance_resenv_name.png)
 
 Choose from a variety of browser-based research environments, respectively web IDEs, which install 
 on your machine at launch.<br>
@@ -115,7 +115,7 @@ For more information, see the [customization wiki page](./customization.md#resea
 
 ### Grant access for project members
 
-![add_users](./img/new_instance/add_users_to_vm.png)
+![add_users](./img/create_instance/add_users_to_vm.png)
 
 Grant members of your project SSH access to your virtual machine.<br>
 You can't grant access to members without an SSH key stored in the portal.
@@ -129,7 +129,7 @@ Each granted member can access your virtual machine with their respective privat
 
 ### Optional parameters
 
-![optionals](./img/new_instance/new_instance_optional.png)
+![optionals](./img/create_instance/new_instance_optional.png)
 
 #### MOSH / UDP ports
 

@@ -6,7 +6,7 @@ Start and manage virtual machines with ease and let SimpleVM take care of variou
 :    SimpleVM runs in a pre-configured network setup. You don't have to set up anything, start your VM with just some 
 clicks. Afterward, you only need to install the tools you need to work on your project.
 Even then, SimpleVM might already offer to do it for you.
-See [New instance](new_instance.md) for more details.
+See [Create Instance](create_instance.md) for more details.
 
 `SSH access`
 :    SimpleVM configures the SSH access for you and provides you with all appropriate commands for SSH access.

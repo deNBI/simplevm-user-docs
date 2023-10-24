@@ -10,6 +10,6 @@ The Tutorials section introduces a few technologies and approaches which can be 
 
 Frequently asked questions.
 
-## SimpleVM
+## [SimpleVM](./simple_vm/index.md)
 
 This section explains the use of SimpleVM in detail.
