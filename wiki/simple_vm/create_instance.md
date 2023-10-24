@@ -1,7 +1,7 @@
 # Starting a virtual machine
 
 To start a virtual machine, you need to be a member of a SimpleVM project.
-If you can't see the “New Instance” button in the sidebar on the left, you either need to reload the page, you are not member of a SimpleVM project or the administrators of the project do not allow non-administrators to start machines on their own.
+If you can't see the "Create Instance” menu item in the sidebar on the left, you either need to reload the page, you are not member of a SimpleVM project or the administrators of the project do not allow non-administrators to start machines on their own.
 
 In case you are part of a SimpleVM-project and have the corresponding rights to start a machine, conditions can lead to the case, that starting of virtual machines for a certain project is not possible. This can happen if:
 
@@ -14,18 +14,23 @@ In case you are a member of a project but are not allowed to start machines:
 - Ask an administrator of your project to start a virtual machine for you.
 - Ask an administrator of your project to change the appropriate setting.
 
-## Mandatory configuration
+## Machine configuration
 
-![overview_one](./img/create_instance/new_instance_overview_one.png)
+There are some choices to be made when starting a machine.
+Some of the inputs are necessary, others are optional. 
+The information that is mandatory for starting a machine is, in addition to the selection of the project in which the machine is to be started, the name of the machine, a flavor and an image.
+The available options are listed and explained below.
+
+![create-instance-part1](./img/create_instance/create-instance-part1.png)
 
 ### 1. Selected project
 
 This select shows the selected project for which you want to start a new virtual machine and only shows when
-you belong to more than one project.
+you belong to more than one project. In case you are only member of a single project, the corresponding project is selected automatically.
 
 ### 2. Used and allocated resources
 
-This line shows the resources used in your project and the resources available.
+This area shows the resources used in your project.
 
 ### 3. Name your virtual machine
 
@@ -36,8 +41,7 @@ After starting your virtual machine, a unique ID appends to the name.
 
 Choose the flavor of your virtual machine.
 Click on a tab to switch between flavor types or use the filter to search by name.
-A flavor sets the resources of your virtual machine.<br>
-See [Flavors](../Concept/flavors.md) for more information about flavors.
+A flavor sets the resources of your virtual machine.
 
 #### About ephemeral flavors
 
@@ -50,12 +54,15 @@ Therefore, you should use ephemeral storage for temporary data that often change
 (e.g. cache, buffers, or session data) or data often replicated across your environment.
 If you need to persist data from an ephemeral, create a backup on a volume.
 See the [Best practices for data backup](./backup.md) wiki page for more information.<br>
-Use [Volumes](#volumes) for data that must persist.
+Use [Volumes](#8-volumes) for data that must persist.
 
 ???+ danger "Backup important data from an ephemeral"
     Ephemeral storage is a fleeting storage. 
     All data will be irretrievably lost when you delete your vm.
     If you need to persist any data from an ephemeral, [create a backup on a volume](./backup.md).
+
+![create-instance-part2](./img/create_instance/create-instance-part2.png)
+
 
 ### 5. Image selection
 
@@ -66,78 +73,46 @@ provided by de.NBI, or one of your snapshots.
 Click on a tab to switch between them or use the filter to search by name.<br>
 For more information about images and snapshots, see [Images and Snapshots](./snapshots.md).
 
-## Optional configuration
+![create-instance-part3](./img/create_instance/create-instance-part3.png)
 
-### Volumes
+### 6. Research Environments
 
-Create, attach, and mount a new volume or attach and mount an already existing volume.<br>
-If you want to know more about volumes, see the [Volumes](./volumes.md) wiki page.
+In case you have chosen an base image, you are able to choose Research Environment to be installed on your machine manually.
+It will take longer than choosing an image with an preinstalled Research Environment.
+Find more information on Browser-based Research Environments [here](./customization.md#research-environments).
 
-#### New volume
+![create-instance-part4](./img/create_instance/create-instance-part4.png)
 
-![vol_new](./img/create_instance/new_instance_vol_new.png)
-
-Name your volume.<br>
-Input a mount path.
-This is the absolute path where you may find the volume on your virtual machine.<br>
-Choose the amount of storage.<br>
-Either discard or add the volume to your vm configuration.
-
-#### Attach existing volume
-
-![vol_ex](./img/create_instance/new_instance_vol_ex.png)
-
-Input a mount path.
-This is the absolute path where you may find the volume on your virtual machine.<br>
-Either discard or add the volume to your vm configuration.
-
-#### Overview of your attached volumes
-
-After adding a volume, you see an overview of the name, the mount path, and the storage in GB of your chosen volumes:
-
-![vol_done](./img/create_instance/new_instance_vol_done.png)
-
-### Conda tools
-
-![conda](./img/create_instance/new_instance_conda.png)
+### 7. Conda tools
 
 You may choose conda, bioconda, and anaconda tools, which install on your machine at launch.
 To add a tool, you may filter by name, and click the green plus button.<br>
 For more information, see the [customization wiki page](./customization.md#conda).
 
-### Browser-based Research environments
+![create-instance-part5](./img/create_instance/create-instance-part5.png)
 
-![resenv](./img/create_instance/new_instance_resenv_name.png)
+### 8. Volumes
 
-Choose from a variety of browser-based research environments, respectively web IDEs, which install 
-on your machine at launch.<br>
-For more information, see the [customization wiki page](./customization.md#research-environments).
+Create, attach, and mount a new volume or attach and mount an already existing volume to the machine.
+When creating a new volume you can choose the name, the path it gets mounted to and a volume size in GB.
+If you want to know more about volumes, see the [Volumes](./volumes.md) wiki page.
+You will see a selection of volumes which are queued for creation and existing volumes you have chosen for attachment below. 
 
-### Grant access for project members
 
-![add_users](./img/create_instance/add_users_to_vm.png)
+### 9. Grant access for project members
 
 Grant members of your project SSH access to your virtual machine.<br>
 You can't grant access to members without an SSH key stored in the portal.
 The column “Public Key Set” displays whether they have an SSH key stored.
-Find out how to set an SSH key [here](../portal/user_information.md#ssh-key).<br>
 Each granted member can access your virtual machine with their respective private key.
 
 ???+ info "Granted members and permissions"
     All users connected to your vm have the same permissions and don't have separate home directories.<br>
     Only the person who initially started the machine can stop, restart, or delete it.
 
-### Optional parameters
+### 10. Summary and Start
 
-![optionals](./img/create_instance/new_instance_optional.png)
-
-#### MOSH / UDP ports
-
-You may open UDP ports and have `MOSH` installed on your virtual machine.
-Open UDP ports offer better mobile usage when using `MOSH`.<br>
-For more information on UDP ports and MOSH, see the [MOSH wiki page](../Tutorials/Mosh/index.md).
-
-## Start VM
-
-Read and confirm the acknowledgments and start your virtual machine.<br>
+At the end of the Create-Instance form you get an overview of all selections made by you. 
+When every necessary settings are given, you are able to initiate the start of the virtual machine by clicking on "Start instance".
+You are otherwise informed of this by corresponding messages in the summary.
 After a short time, the page redirects you to the [Instance Overview](./instance_overview.md) page.
