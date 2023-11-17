@@ -9,7 +9,6 @@ A message informs you if you can't start a cluster. This can happen if:
 - You haven't enough resources:
     - Delete running virtual machines or clusters to free resources.
     - An administrator of your project can request more resources.
-      See the [Modification request](../../portal/modification.md) wiki page for more information.
 - Members of your project may not launch virtual machines:
     - Ask an administrator of your project to start a cluster for you.
     - Ask an administrator of your project to change the appropriate setting.
@@ -36,7 +35,7 @@ If the name already exists, a unique ID appends to the name after starting your 
 Choose the flavor of your master node.
 Click on a tab to switch between flavor types or use the filter to search by name.
 A flavor sets the resources of your virtual machine.<br>
-See the [Flavor](../../Concept/flavors.md) wiki page for more information about flavors.
+
 
 ### About ephemeral flavors
 
