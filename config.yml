@@ -20,7 +20,7 @@ theme:
         icon: material/weather-night
         name: Switch to light mode
 
-  logo: 'img/SimpleVM_New.svg'
+  logo: 'img/SimpleVM_logo_wiki.svg'
   favicon: 'img/simplevm_favicon.svg'
   features:
     - navigation.top
@@ -105,26 +105,24 @@ extra:
 
 nav:
   - 'Home' : index.md
-  - 'Simple VM':
-      - simple_vm/index.md
-      - 'Group Permissions': simple_vm/permissions.md
-      - 'Create Instance': simple_vm/create_instance.md
-      - 'Instance overview': simple_vm/instance_overview.md
-      - 'Instance details': simple_vm/instance_detail.md
-      - 'Cluster' :
-          - simple_vm/Cluster/index.md
-          - 'New cluster': simple_vm/Cluster/new_cluster.md
-          - 'Cluster overview': simple_vm/Cluster/cluster_overview.md
-          - 'Cluster detail': simple_vm/Cluster/cluster_detail.md
-      - 'SSH keys and sharing access': simple_vm/keypairs.md
-      - 'Volumes': simple_vm/volumes.md
-      - 'Images/Snapshots': simple_vm/snapshots.md
-      - 'Backup data': simple_vm/backup.md
-      - 'Customization': simple_vm/customization.md
-      - 'Concurrent Guacamole sessions': simple_vm/guacamole.md
-      - 'Concurrent RStudio sessions': simple_vm/rstudio.md
-      - 'Workshops': simple_vm/workshop.md
-      - 'Miscellaneous': simple_vm/misc.md
+  - 'Group Permissions': simple_vm/permissions.md
+  - 'Create Instance': simple_vm/create_instance.md
+  - 'Instance overview': simple_vm/instance_overview.md
+  - 'Instance details': simple_vm/instance_detail.md
+  - 'Cluster' :
+    - simple_vm/Cluster/index.md
+    - 'New cluster': simple_vm/Cluster/new_cluster.md
+    - 'Cluster overview': simple_vm/Cluster/cluster_overview.md
+    - 'Cluster detail': simple_vm/Cluster/cluster_detail.md
+  - 'SSH keys and sharing access': simple_vm/keypairs.md
+  - 'Volumes': simple_vm/volumes.md
+  - 'Images/Snapshots': simple_vm/snapshots.md
+  - 'Backup data': simple_vm/backup.md
+  - 'Customization': simple_vm/customization.md
+  - 'Concurrent Guacamole sessions': simple_vm/guacamole.md
+  - 'Concurrent RStudio sessions': simple_vm/rstudio.md
+  - 'Workshops': simple_vm/workshop.md
+  - 'Miscellaneous': simple_vm/misc.md
   - 'Tutorials' :
     - 'Access de.NBI Virtual Machines from Windows 10' : Tutorials/Win10_SSH/index.md
     - 'Access a SimpleVM with Mosh' : Tutorials/Mosh/index.md
