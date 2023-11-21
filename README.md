@@ -12,14 +12,16 @@ You can find the documentation
 Use the Environment which will also be used in production.
 
 ~~~BASH
-docker run -it -v "$(pwd):/srv_root/docs"  -p "8000:8000" --env ENABLED_HTMLPROOFER=True --entrypoint="mkdocs" denbicloud/mkdocswebhook:2.5.0 serve -f /srv_root/docs/config.yml   --dev-addr 0.0.0.0:8000
+docker run -it -v "$(pwd):/srv_root/docs"  -p "8000:8000" --env ENABLED_HTMLPROOFER=True --entrypoint="mkdocs" quay.io/denbicloud/mkdocswebhook:staging serve -f /srv_root/docs/config.yml   --dev-addr 0.0.0.0:8000
 ~~~
 
 Or turn off the HTML Proffer for faster startup:
 
 ~~~BASH
-docker run -it -v "$(pwd):/srv_root/docs"  -p "8000:8000" --env ENABLED_HTMLPROOFER=False --entrypoint="mkdocs" denbicloud/mkdocswebhook:2.5.0 serve -f /srv_root/docs/config.yml   --dev-addr 0.0.0.0:8000
+docker run -it -v "$(pwd):/srv_root/docs"  -p "8000:8000" --env ENABLED_HTMLPROOFER=False --entrypoint="mkdocs" quay.io/denbicloud/mkdocswebhook:staging serve -f /srv_root/docs/config.yml   --dev-addr 0.0.0.0:8000
 ~~~
+
+Make sure to use the latest `mkdocs-webhook`-version. The `staging`-state should reflect the latest features.
 
 ### Local
 
