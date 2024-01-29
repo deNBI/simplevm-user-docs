@@ -2,6 +2,9 @@
 
 Welcome to the SimpleVM Wiki!
 
+
+Below you will find a brief overview of the most important features of SimpleVM.
+
 # SimpleVM
 
 Start and manage virtual machines with ease and let SimpleVM take care of various settings for you.

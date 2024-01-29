@@ -1,7 +1,7 @@
 # Workshop management
 
 You can manage your workshops conveniently with SimpleVM.
-Create workshops in your SimpleVM project, add users and administrators, and launch virtual machines
+Create workshops in your SimpleVM project, add users and tutors, and launch virtual machines
 for your users with a few clicks.
 
 On this page, you learn:
@@ -22,20 +22,15 @@ see the [Portal](../portal/allocation.md) wiki page for more information about t
 If you have a SimpleVM project without workshop activated, but would like to conduct one in the context of your 
 project, contact the de.NBI helpdesk at [cloud-helpdesk@denbi.de](mailto:cloud-helpdesk@denbi.de).
 
-## Manage workshops
+## Create a new workshop
 
 ![new_workshop_sidebar](./img/workshop/new_workshop_sidebar.png){align=left}
 
-All project administrators can manage workshops within the portal once your SimpleVM project got
+All project administrators can manage workshops within the SimpleVM portal once your SimpleVM project got
 approval.<br>
 
-Although we recommend that our users authenticate via our standard registration process, we understand that this can be more of a hurdle for users who have only registered for a workshop. For this reason, we would like to point out that LifeScience AAI offers the possibility of so-called hostel accounts. These accounts work with a simple username-password scheme and allow your participants to register very easily and quickly.
 
-For the creation of such a hostel account, you can give the following link to your participants:
-[https://signup.aai.lifescience-ri.eu/non/registrar/?vo=lifescience_hostel&targetnew=https%3A%2F%2Flifescience-ri.eu%2Faai%2Fhow-use&targetexisting=https%3A%2F%2Flifescience-ri.eu%2Faai%2Fhow-use&targetextended=https%3A%2F%2Flifescience-ri.eu%2Faai%2Fhow-use](https://signup.aai.lifescience-ri.eu/non/registrar/?vo=lifescience_hostel&targetnew=https%3A%2F%2Flifescience-ri.eu%2Faai%2Fhow-use&targetexisting=https%3A%2F%2Flifescience-ri.eu%2Faai%2Fhow-use&targetextended=https%3A%2F%2Flifescience-ri.eu%2Faai%2Fhow-use)
-
-
-To get to the workshop management page, click `Manage workshops` in the sidebar.
+To create a new workshop for your project click `YOUR_PROJECT_NAME` in the sidebar and select `Create a new workshop`.
 
 ???+ question "I can't see the tab in the sidebar"
     The workshop section is only visible if:
@@ -45,20 +40,9 @@ To get to the workshop management page, click `Manage workshops` in the sidebar.
     
     If you satisfy both conditions and still not see the tab, contact the [cloud-helpdesk@denbi.de](mailto:cloud-helpdesk@denbi.de).
 
-On this page, you can:
+This will open a new page with a workshop creation formular:
+![workshop-formular](./img/workshop/new_workshop_formular.png)
 
-- Create workshops
-- Clean up workshops
-- Get information about the participants and their instances
-- Email participants with information about their instances
-
-### Create a new workshop
-
-![create_or_select_workshop](./img/workshop/workshop_select.png)
-
-Select the project you want to manage a workshop for. The dropdown only displays projects with workshop activated.<br>
-Click `New Workshop`, enter a descriptive name, and a project-intern unique shortname.<br>
-You can create as many workshops as you want and use them to create different configurations.
 
 ???+ question "Why the shortname?"
     The shortname of your workshop appears in the workshop vm names and research environment URLs to
@@ -68,91 +52,45 @@ You can create as many workshops as you want and use them to create different co
     Workshops share the available SimpleVM project resources. If you have maximum 10 vms available,
     you can't start more than 10 vms across all workshops running in that SimpleVM project.
 
-
-### Workshop Timeframes
-
-Workshop administrators are able to enter timeframes in which classes or other related events relevant to the workshop take place.
-
-A start and end time can be specified, as well as a name that describes the event. 
-In addition, a workshop created in the Overview can be selected to which the event is assigned.
-
-If no specific workshop is selected at this point, the timeframe is linked to the superordinate workshop project itself.
-
-It is recommended to enter these time frames as accurately as possible. For example, individual dates should be entered instead of entering a one-week workshop from start to finish.
+Upon submitting the workflow form, you will be automatically redirected to the Workshop Overview. Additionally, the Workshop will also be visible in the sidebar for quick access.
 
 
-The information is used by the cloud administrators to plan maintenance work and updates in such a way that the execution of workshops and the use of resources is as unrestricted as possible and they do not interfere with each other.
+
+## Workshop Overview
+
+![workshop-overview](./img/workshop/workshop_overview.png)
+
+### Participants and Tutors
+
+#### Registration
+You can open the registration for the workshop via the `Create Invitation` button.
+This will create a link which you can share, where participants can request a registration.
+![workshop-invitation](./img/workshop/workshop_invitation_link.png)
+
+The user can then request a registration:
+![workshop-registration](./img/workshop/workshop_registration.png)
 
 
-![workshop_timeframes](./img/workshop/workshop_timeframes.png)
+And a Project Admin can approve/decline the registration:
+![workshop-regi_tutor](./img/workshop/workshop_reg_tutor.png)
 
-### Selected workshop overview
+Additional Workshop Tutors can be set via the Tutors Tab;
 
-![workshop_overview](./img/workshop/workshop_project_overview.png)
+![workshop-add-tutor](./img/workshop/add_tutors.png)
+???+ info "Tutors"
+    Only project members can be set as tutors!
 
-Select the project you want to manage a workshop for. The dropdown only displays projects with workshop activated.<br>
-A list of all workshops within the selected project appears, and an overview of all participants.
-Select a workshop to load the list of the participants' virtual machines and their details.
-<br>
-<br>
-To add participants and administrators to your project and workshops, 
-you need to add them in the [project overview](../portal/project_overview.md).  
 
-![add_members_ws](./img/workshop/workshop_add_members.png)
+#### Start virtual machines for your participants
 
-#### Inform participants about their instances
+At your workshop overview select "Create new instances".
 
-Click `Send VM info Mails` to inform every participant with a virtual machine about their virtual machines details and 
-how to access it.<br>
-Click `Send Mail` or `(Re)Send Mail` to inform selected participants about their virtual machines details and
-how to access it.<br>
+![new_instance_workshop](./img/workshop/workshop_new_instances.png)  
 
-???+ question "Who sends the E-Mail and who gets it?"
-    The [cloud@denbi.de](mailto:cloud@denbi.de) address sends an E-Mail to the preferred E-Mail address of each
-    participant. Each user can change their preferred E-Mail address on their [profile page](../portal/user_information.md).
+This will open the vm creation formular for the workshop:
 
-### Clean up a workshop
+![workshop_vms_form](./img/workshop/workshop_vms_form.png)  
 
-Select the project you want to manage a workshop for. The dropdown only displays projects with workshop activated.<br>
-Select the workshop you want to end and click `Cleanup workshop`.
-This deletes the workshop and all instances started for this workshop. Created volumes and snapshots remain.
-
-???+ info "Volume resources"
-    Keep in mind that volumes, that remain after cleaning up a workshop, occupy your allocated volume resources.
-    If you want to free the resources, you need to 
-    [apply for more resources](../portal/modification.md#resource-modifications) or 
-    delete the remaining [volumes](volumes.md) manually.
-
-## Manage workshop vms
-
-![new_workshop_sidebar](./img/workshop/new_workshop_sidebar.png){align=left}
-
-All project administrators can manage workshop vms within the portal once your SimpleVM project got
-approval, and at least one workshop got created.<br>
-To get to the workshop vm page, click `Add workshop VM` in the sidebar.
-
-???+ question "I can't see the tab in the sidebar"
-    The workshop section is only visible if:
-
-    - You are an administrator of a SimpleVM project.
-    - The SimpleVM project has workshop capability activated.
-    
-    If you satisfy both conditions and still not see the tab, 
-    contact [cloud-helpdesk@denbi.de](mailto:cloud-helpdesk@denbi.de).
-
-On this page, you can:
-
-- Start virtual machines for your participants
-
-!!! info "Starting vms prohibited for participants by default"
-    By default, workshop participants can't start machines on their own. 
-    An administrator can waive this restriction on the project overview.
-
-### Start virtual machines for your participants
-
-Select a workshop.
-
-![new_instance_workshop](./img/workshop/workshop_new_vms.png)  
 
 Select a flavor.
 See [Flavors](../Concept/flavors.md) for more information about flavors.<br>
@@ -162,26 +100,49 @@ Optionally, select a research environment template.
 See [Research environments](customization.md#research-environments) for more information about browser-based
 research environments.
 
+
 ??? tip "Base image with template versus research environment image"
     de.NBI Cloud provides images with a research environment installed.
     Virtual machines with pre-build images start faster than base images with a selected template.
 
-Select the participants and administrators you want to start vms for.
+Select the participants you want to start vms for.
 You may start as many virtual machines for a participant as you have resources.
 
-![select_users](./img/workshop/workshop_select_user.png)  
 
 The machine name, and the research environment URL, have the form 
 `<WORKSHOP-SHORTNAME><PARTICIPANT-LASTNAME><PARTICIPANT-FIRSTNAME>`, and have a maximum of 25 characters.<br>
-The startup process puts the public SSH key of your project administrators on every workshop vm.
-This enables your project administrators to connect to a workshop vm if required.<br>
-The research-environment is accessible by the participant, and the administrator who started the virtual machine.
+The startup process puts the public SSH key of your workshop tutors and project admins on every workshop vm.
+This enables your workshop tutors to connect to a workshop vm if required.<br>
+The research-environment is accessible by the participant, and the tutors who started the virtual machine.
 <br>
 Before starting the workshop vms, you need to confirm your responsibility for the machines.
-After starting, a redirect takes you to the instance overview where you find more information about the status
+After starting, a redirect takes you to the workshop instance overview where you find more information about the status
 of your machines.
 
-![vm_overview](./img/workshop/workshop_vm_ready.png)
+![vm_overview](./img/workshop/workshop_vm_list.png)
+
+#### Inform participants about their instances
+
+Select specific or all vms and click `Send Information Mails` to inform the corresponding participants with a virtual machine about their virtual machines details and 
+how to access it.<br>
+
+
+???+ question "Who sends the E-Mail and who gets it?"
+    The [cloud@denbi.de](mailto:cloud@denbi.de) address sends an E-Mail to the preferred E-Mail address of each
+    participant. Each user can change their preferred E-Mail address on their [profile page](../portal/user_information.md).
+
+### Clean up a workshop
+Select the workshop you want to end and click `Delete Workshop`.
+This deletes the workshop and all instances started for this workshop. Created volumes and snapshots remain.
+
+???+ info "Volume resources"
+    Keep in mind that volumes, that remain after cleaning up a workshop, occupy your allocated volume resources.
+    If you want to free the resources, you need to 
+    [apply for more resources](../portal/modification.md#resource-modifications) or 
+    delete the remaining [volumes](volumes.md) manually.
+
+
+
 
 ## Prepare data for your participants
 
