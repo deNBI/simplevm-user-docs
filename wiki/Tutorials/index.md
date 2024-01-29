@@ -1,7 +1,7 @@
 # Tutorials
 
 Welcome to the SimpleVM tutorials section.
-You can find more general tutorials, e.g. for the use of cloud resources in context with OpenStack [here](https://cloud.denbi.de/Tutorials)
+You can find more general tutorials, e.g. for the use of cloud resources in context with OpenStack [here](https://cloud.denbi.de/wiki/Tutorials)
 
 - [Access a SimpleVM with Mosh](Mosh/index.md)
 - [SimpleVM File Transfer Methods](File_Transfer_Methods/index.md)
