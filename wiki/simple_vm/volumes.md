@@ -57,7 +57,7 @@ Perform an action on one volume.
 
 You have two ways to create a volume:
 
-1. When you crate a vm, you can create a [New volume](new_instance.md#new-volume). 
+1. When you crate a vm, you can create a [New volume](./create_instance.md#new-volume). 
    The volume gets automatically mounted this way.
 2. At the Volume tab choose to create a volume.
 
