@@ -24,17 +24,17 @@ Filter by name to find the tools you need.<br>
 Click on the green plus sign to add the tool or click the red minus sign to remove the tool from your
 selection of tools.<br>
 
-![conda_table_with_selections](./img/new_instance/new_instance_conda.png)
+![conda_table_with_selections](./img/create_instance/new_instance_conda.png)
 
 After choosing your tools and packages, you need to read and confirm the proceeding installation process.
 
-![conda_confirmation_needed](./img/new_instance/new_instance_okay.png)
+![conda_confirmation_needed](./img/create_instance/new_instance_okay.png)
 
 ### Installation process
 
 ??? info "Minoconda3"
     Miniconda3 will install, which is a lightweight package manager.
-    We decided against the full Anaconda set of tools due to its size with over 1500 packages.<br>
+    We decided against the full Anaconda sFet of tools due to its size with over 1500 packages.<br>
     If you wish to install Anaconda, you will have to choose it from the list of packages.
 
 We create a temporary private and public key pair to access your virtual machine at launch, and to
@@ -71,7 +71,7 @@ In the future, you may find more research environments added.<br>
 
 ![resenv_pre_build_images](./img/customization/resenv_images.png)
 
-![resenv_selection_filled](./img/new_instance/new_instance_resenv_name.png)
+![resenv_selection_filled](./img/create_instance/new_instance_resenv_name.png)
 
 To start a research environment on your virtual machine, either select a pre-build image provided by de.NBI from the 
 “Research Environment” tab or select a base image and a research environment template. 
@@ -222,7 +222,7 @@ You may find the list on the [detailed page](./instance_detail.md#user-managemen
 > [Eclipse Theia](https://theia-ide.org/) is an extensible platform to develop full-fledged multi-language Cloud & 
 >Desktop IDE-like products with state-of-the-art web technologies.
 
-Find more information on TheiaIDE on the [tutorial page](../Tutorials/TheiaIde/index.md).
+Find more information on TheiaIDE on the [tutorial page]({{extra.cloud_portal_wiki_link}}Tutorials/TheiaIde/).
 
 To access your TheiaIDE research environment, follow the link you may find, after starting your virtual machine, 
 in the instance overview or on the detail page of your virtual machine.

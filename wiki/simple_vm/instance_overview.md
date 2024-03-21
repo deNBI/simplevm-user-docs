@@ -29,9 +29,7 @@ Trigger an action on all selected virtual machines.<br>
 ## 4. General information
 
 See the name, the status, the project, and the creator of the virtual machine.<br>
-Click on the name to get to the [Detail page](instance_detail.md). Click on the project name to get
-to the [Project overview](../portal/project_overview.md).
-
+Click on the name to get to the [Detail page](instance_detail.md).
 ## 5. Descriptive icons
 
 Get a quick overview of the configuration:  

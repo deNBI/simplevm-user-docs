@@ -53,7 +53,7 @@ A window opens where you can enter a name for your snapshot. Confirm to create a
 
 ### Boot from a snapshot
 
-After you successfully created the snapshot, you can go to the [new instance](./new_instance.md#5-image-selection) 
+After you successfully created the snapshot, you can go to the [new instance](./create_instance.md#5-image-selection) 
 tab and choose your created snapshot as an image to start a vm. 
 
 ![start_vm_from_snap](./img/snapshots/startsnap.png)

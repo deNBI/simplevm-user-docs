@@ -22,9 +22,7 @@ You can set how many clusters you want to see on a page and scroll through the p
 ![cluster_card](../img/cluster_overview/card_overview.png)
 
 See the name, the status, the project, and the creator of the cluster.<br>
-Click on the name to get to the [Detail page](cluster_detail.md). Click on the project name to get
-to the [Project overview](../../portal/project_overview.md).
-
+Click on the name to get to the [Detail page](cluster_detail.md).
 ## How to connect
 
 ![how_to_connect](../img/cluster_overview/how_to_connect.png)
