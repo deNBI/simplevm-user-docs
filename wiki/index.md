@@ -5,6 +5,10 @@ Welcome to the SimpleVM Wiki!
 
 Below you will find a brief overview of the most important features of SimpleVM.
 
+???+ info "Migration in progress"
+    Please consider: Formerly, SimpleVM was part of the de.NBI Cloud Portal. Many functions where integrated in the portal itself. The SimpleVM-specific functions and features are moved to SimpleVM itself step by step.
+    Therefore some information in this wiki may not be fully up to date, as the migration is still in progress.
+
 # SimpleVM
 
 Start and manage virtual machines with ease and let SimpleVM take care of various settings for you.

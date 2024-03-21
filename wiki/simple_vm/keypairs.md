@@ -136,7 +136,7 @@ You need a valid public key from the person you want to share access with.
     ![img.png](img/project_overview_pub_key.png)
 
 If they don't have an SSH key pair yet, they need to generate it. 
-They can use ssh-keygen, or they can [generate a public key](../portal/user_information.md#ssh-key) on 
+They can use ssh-keygen, or they can [generate a public key](#generation-of-keypairs) on 
 their profile page.<br>
 Add the key to your virtual machine after getting their public key.
 

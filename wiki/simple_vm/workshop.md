@@ -15,7 +15,7 @@ On this page, you learn:
 
 Only administrators in a SimpleVM project with workshops activated can use the workshop tools.<br>
 If you have no SimpleVM project, you need to apply for a SimpleVM project with `Workshop` marked,
-see the [Portal](../portal/allocation.md) wiki page for more information about the application process.
+see the [Portal]({{extra.cloud_portal_wiki_link}}portal/allocation/) wiki page for more information about the application process.
 
 ![allocation_workshop](./img/workshop/checkbox.png)
 
@@ -129,7 +129,7 @@ how to access it.<br>
 
 ???+ question "Who sends the E-Mail and who gets it?"
     The [cloud@denbi.de](mailto:cloud@denbi.de) address sends an E-Mail to the preferred E-Mail address of each
-    participant. Each user can change their preferred E-Mail address on their [profile page](../portal/user_information.md).
+    participant. Each user can change their preferred E-Mail address on their [profile page](../simple_vm/keypairs.md#key-handling-on-profile-page).
 
 ### Clean up a workshop
 Select the workshop you want to end and click `Delete Workshop`.
@@ -138,7 +138,7 @@ This deletes the workshop and all instances started for this workshop. Created v
 ???+ info "Volume resources"
     Keep in mind that volumes, that remain after cleaning up a workshop, occupy your allocated volume resources.
     If you want to free the resources, you need to 
-    [apply for more resources](../portal/modification.md#resource-modifications) or 
+    [apply for more resources]({{extra.cloud_portal_wiki_link}}portal/modification/#resource-modifications) or 
     delete the remaining [volumes](volumes.md) manually.
 
 
@@ -158,7 +158,7 @@ We create copies of your prepared volume for you and assign them to your project
 
 You should add participants to your project a couple of days before your workshop starts.
 They need an account for the de.NBI Cloud Portal, otherwise you can't add them.
-You can send them a link to the [registration wiki](../registration.md) where they can read about the
+You can send them a link to the [registration wiki]({{extra.cloud_portal_wiki_link}}registration) where they can read about the
 registration process.<br>
 Sometimes, participants can have trouble registering.
 Having them register beforehand, so you can add them, helps for a smoother workshop start.
@@ -182,7 +182,7 @@ It may happen that participants lose their private key, mix up public and privat
 try to use unrelated private and public keys.
 This can lead to your participants losing access to their vm.<br>
 Your participants can set their public key or create a keypair on their 
-[profile page](../portal/user_information.md#ssh-key).
+[profile page]({{extra.cloud_portal_wiki_link}}portal/user_information/#ssh-key).
 Make sure they download the private key when they create an SSH keypair and save it on their computers,
 the de.NBI Cloud Portal only stores the public key.
 
