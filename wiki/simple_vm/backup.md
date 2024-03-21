@@ -24,7 +24,7 @@ Volumes persist independently of your virtual machines. In other words, a mounte
 doesn't get deleted when your virtual machine gets deleted.<br>
 Your requested project volume storage limits the size of volumes in your project.
 If you hit the volume storage limit, you can request more resources.
-See [Resource modifications](../portal/modification.md#resource-modifications) for more information.
+See [Resource modifications]({{extra.cloud_portal_wiki_link}}portal/modification/#resource-modifications) for more information.
 
 ???+ info "When to back up with volumes"
     Back up data on a volume when you want:
