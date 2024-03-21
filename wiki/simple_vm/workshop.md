@@ -93,7 +93,7 @@ This will open the vm creation formular for the workshop:
 
 
 Select a flavor.
-See [Flavors](../Concept/flavors.md) for more information about flavors.<br>
+See [Flavors]({{extra.cloud_portal_wiki_link}}Concept/flavors/) for more information about flavors.<br>
 Select an image.
 See [Images and Snapshots](snapshots.md) for more information about images and snapshots.<br>
 Optionally, select a research environment template.

@@ -34,6 +34,6 @@ about the cluster overview.
 
 ## OpenStack and BiBiGrid
 
-If you belong to an OpenStack project, see this [BiBiGrid tutorial](../../Tutorials/BiBiGrid/index.md) on how
+If you belong to an OpenStack project, see this [BiBiGrid tutorial]({{extra.cloud_portal_wiki_link}}Tutorials/BiBiGrid/) on how
 to use [BiBiGrid](https://github.com/BiBiServ/bibigrid).
 SimpleVM uses BiBiGrid to offer the cluster feature.
