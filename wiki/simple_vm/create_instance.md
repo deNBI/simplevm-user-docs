@@ -116,3 +116,20 @@ At the end of the Create-Instance form you get an overview of all selections mad
 When every necessary settings are given, you are able to initiate the start of the virtual machine by clicking on "Start instance".
 You are otherwise informed of this by corresponding messages in the summary.
 After a short time, the page redirects you to the [Instance Overview](./instance_overview.md) page.
+
+
+## Restrictions on the choice of resources
+
+Certain resources, such as GPU flavors or high-memory flavors, are subject to certain restrictions.
+This is due to the scarcity of these resources.
+
+GPUs are in high demand in the cloud environment. To enable all users in SimpleVM who require these resources to access them, it is important to only provide projects with the GPU resources that are assigned to the project.
+
+The same applies to flavors such as those of the high-memory type.
+The scarcity of this resource is due to the cloud technology as such. Flavors of this type occupy large areas of individual physical machines. This severely limits the computing capacities, particularly in the area of RAM for these individual physical machines.
+
+In order to meet all project requirements of all projects that use SimpleVM as comprehensively as possible, only the assigned flavors can be used by flavors of these types. With standard flavors, on the other hand, only the overall resource restrictions of the respective project apply.
+
+Please bear this in mind for all resources, regardless of the limitation:
+Only use them for as long as you need them. If a machine is not needed, for example because it is idle, create a snapshot of the machine and delete it.
+You can then use the snapshot to start a new machine when the resource is needed again. This prevents unnecessary use of resources. When deleting machines, please also consider the notes on [backups and persistence of data](./backup.md).
