@@ -34,7 +34,7 @@ After choosing your tools and packages, you need to read and confirm the proceed
 
 ??? info "Minoconda3"
     Miniconda3 will install, which is a lightweight package manager.
-    We decided against the full Anaconda sFet of tools due to its size with over 1500 packages.<br>
+    We decided against the full Anaconda set of tools due to its size with over 1500 packages.<br>
     If you wish to install Anaconda, you will have to choose it from the list of packages.
 
 We create a temporary private and public key pair to access your virtual machine at launch, and to
