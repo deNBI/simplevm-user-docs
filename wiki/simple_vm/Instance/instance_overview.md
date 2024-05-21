@@ -2,7 +2,7 @@
 
 On the “Instance Overview” you can list virtual machines, get more information, and manage them.
 
-![layout](./img/instance_overview/instance_overview_general.png)
+![layout](../img/instance_overview/instance_overview_general.png)
 
 ## Layout
 
@@ -47,7 +47,7 @@ The header of the component shows the following information on first glance:
 #### Further Details and actions
 
 
-![actions](./img/instance_overview/instance_overview_actions.png)  
+![actions](../img/instance_overview/instance_overview_actions.png)  
 
 
 By clicking on the header of a specific machine listed, a more detailed description of the machine is shown.

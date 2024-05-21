@@ -41,7 +41,7 @@ We create a temporary private and public key pair to access your virtual machine
 install your selection with [Ansible](https://docs.ansible.com/ansible/latest/index.html).
 At the end of the installation process we remove the temporary key from your vm and copy your public key onto it,
 regardless of whether the installation of your selection succeeds or fails.<br>
-You may download the installation logs as a PDF or TXT file. See [Instance Detail](./instance_detail.md#ansible-logs) 
+You may download the installation logs as a PDF or TXT file. See [Instance Detail](./Instance/instance_detail.md#ansible-logs) 
 for more information.
 
 ### Environment
@@ -92,8 +92,8 @@ This name appears in the unique URL used to access your research environment.
 
 ### Find your research environment URL
 
-To access your research environment, follow the Link you find on the [instance overview](./instance_overview.md) 
-or on the [detail page](./instance_detail.md) of your virtual machine.
+To access your research environment, follow the Link you find on the [instance overview](./Instance/instance_overview.md) 
+or on the [detail page](./Instance/instance_detail.md) of your virtual machine.
 
 ![resenv_link](./img/instance_detail/detail_resenv.png)
 
@@ -159,7 +159,7 @@ Now you can work with RStudio by web browser.
 #### Multiple users and concurrent sessions
 
 To grant other users access to your research environment, add them to the allowed list of users.
-You may find the list on the [detailed page](./instance_detail.md#user-management).
+You may find the list on the [detailed page](./Instance/instance_detail.md#user-management).
 
 ???+ warning "Concurrent sessions"
     This doesn't automatically allow for concurrent sessions, i.e., your session terminates 
@@ -210,7 +210,7 @@ Now you can work with Apache Guacamole by web browser.
 #### Multiple users and concurrent sessions
 
 To grant other users access to your research environment, add them to the allowed list of users.
-You may find the list on the [detailed page](./instance_detail.md#user-management).
+You may find the list on the [detailed page](./Instance/instance_detail.md#user-management).
 
 ???+ warning "Concurrent sessions"
     This doesn't automatically allow for concurrent sessions, i.e., your session terminates

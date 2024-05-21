@@ -108,10 +108,12 @@ extra:
 nav:
   - 'Home' : index.md
   - 'Group Permissions': simple_vm/permissions.md
-  - 'Create Instance': simple_vm/create_instance.md
-  - 'Instance overview': simple_vm/instance_overview.md
-  - 'Instance details': simple_vm/instance_detail.md
-  - 'Cluster' :
+  - 'VM Management':
+    - simple_vm/Instance/index.md
+    - 'Create Instance': simple_vm/Instance/create_instance.md
+    - 'Instance overview': simple_vm/Instance/instance_overview.md
+    - 'Instance details': simple_vm/Instance/instance_detail.md
+  - 'Cluster Management' :
     - simple_vm/Cluster/index.md
     - 'New cluster': simple_vm/Cluster/new_cluster.md
     - 'Cluster overview': simple_vm/Cluster/cluster_overview.md
