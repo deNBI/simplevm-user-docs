@@ -53,9 +53,14 @@ For more information on volumes, see the [volume](../volumes.md) wiki page.
 
 ## Ports
 
-When enabled for the project your machine is running in, you are able to configure port ranges for the vm, so it allows connections on these ports when sending requests from machines in the same network. In the case of SimpleVM, all machines in a project are located in the same network. Machines outside this network cannot access these ports. 
+When enabled for the project your machine is running in, you are able to configure port ranges for the vm, so it allows connections on these ports when sending requests from machines in the same network. 
+In the case of SimpleVM, all machines in a project are located in the same network. Machines outside this network cannot access these ports. 
 You can open port ranges from port 1024 to 65535.
 The Ethernet type, the IP protocol and the start and end of the range can be specified for each range. This setting can be added to a machine with **Add**. Released port ranges can be removed again in the list below with **Remove**. 
+
+Within the same network you are able to reach the machine using the **private IP address** shown.
+The IP cannot be used to reach the machine from outside the project's own network.
+
 
 ![ports](../img/instance_detail/detail_ports.png)
 
