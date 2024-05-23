@@ -17,7 +17,7 @@ Start and manage virtual machines with ease and let SimpleVM take care of variou
 :    SimpleVM runs in a pre-configured network setup. You don't have to set up anything, start your VM with just some 
 clicks. Afterward, you only need to install the tools you need to work on your project.
 Even then, SimpleVM might already offer to do it for you.
-See [Create Instance](simple_vm/create_instance.md) for more details.
+See [Create Instance](simple_vm/Instance/create_instance.md) for more details.
 
 `SSH access`
 :    SimpleVM configures the SSH access for you and provides you with all appropriate commands for SSH access.
@@ -49,7 +49,7 @@ See [Cluster](simple_vm/Cluster/index.md) for more details.
 `Machine management`
 :    Manage your virtual machines with SimpleVM. You can stop, reboot, manage volume attachments, 
 and delete your vms on one page.
-See [Instance overview](simple_vm/instance_overview.md) for more details.
+See [Instance overview](simple_vm/Instance/instance_overview.md) for more details.
 
 `Workshop management`
 :    Manage your workshops with SimpleVM. You can create workshops, 

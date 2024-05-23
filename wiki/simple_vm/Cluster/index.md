@@ -1,6 +1,6 @@
 # Cluster
 
-Besides single machines, SimpleVM users can start entire clusters.
+Besides [single machines](../Instance/index.md), SimpleVM users can start entire clusters.
 Since the cluster feature is still in the development phase,
 only selected projects can use it.
 Contact [cloud-helpdesk@denbi.de](mailto:cloud-helpdesk@denbi.de) if you want the cluster feature
