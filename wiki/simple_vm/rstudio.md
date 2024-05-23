@@ -7,7 +7,7 @@ you need to add them first by following these steps.
 ## Add user to research environment
 
 If you haven't already done so, add the user to your research environment on the
-[instance detail page](./instance_detail.md#user-management).
+[instance detail page](./Instance/instance_detail.md#user-management).
 
 ![user_management](./img/instance_detail/user_management.png)  
 

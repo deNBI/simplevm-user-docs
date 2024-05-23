@@ -21,7 +21,7 @@ Some of the inputs are necessary, others are optional.
 The information that is mandatory for starting a machine is, in addition to the selection of the project in which the machine is to be started, the name of the machine, a flavor and an image.
 The available options are listed and explained below.
 
-![create-instance-part1](./img/create_instance/create-instance-part1.png)
+![create-instance-part1](../img/create_instance/create-instance-part1.png)
 
 ### 1. Selected project
 
@@ -53,15 +53,15 @@ Further, snapshotting a vm doesn't persist data from an ephemeral.<br>
 Therefore, you should use ephemeral storage for temporary data that often changes
 (e.g. cache, buffers, or session data) or data often replicated across your environment.
 If you need to persist data from an ephemeral, create a backup on a volume.
-See the [Best practices for data backup](./backup.md) wiki page for more information.<br>
+See the [Best practices for data backup](../backup.md) wiki page for more information.<br>
 Use [Volumes](#8-volumes) for data that must persist.
 
 ???+ danger "Backup important data from an ephemeral"
     Ephemeral storage is a fleeting storage. 
     All data will be irretrievably lost when you delete your vm.
-    If you need to persist any data from an ephemeral, [create a backup on a volume](./backup.md).
+    If you need to persist any data from an ephemeral, [create a backup on a volume](../backup.md).
 
-![create-instance-part2](./img/create_instance/create-instance-part2.png)
+![create-instance-part2](../img/create_instance/create-instance-part2.png)
 
 
 ### 5. Image selection
@@ -71,31 +71,31 @@ An image includes the operating system and tool packages installed on your vm.<b
 You may choose between base images provided by de.NBI, pre-build images containing a Research Environment
 provided by de.NBI, or one of your snapshots.
 Click on a tab to switch between them or use the filter to search by name.<br>
-For more information about images and snapshots, see [Images and Snapshots](./snapshots.md).
-
-![create-instance-part3](./img/create_instance/create-instance-part3.png)
+For more information about images and snapshots, see [Images and Snapshots](../snapshots.md).
+.
+![create-instance-part3](../img/create_instance/create-instance-part3.png)
 
 ### 6. Research Environments
 
 In case you have chosen an base image, you are able to choose Research Environment to be installed on your machine manually.
 It will take longer than choosing an image with an preinstalled Research Environment.
-Find more information on Browser-based Research Environments [here](./customization.md#research-environments).
+Find more information on Browser-based Research Environments [here](../customization.md#research-environments).
 
-![create-instance-part4](./img/create_instance/create-instance-part4.png)
+![create-instance-part4](../img/create_instance/create-instance-part4.png)
 
 ### 7. Conda tools
 
 You may choose conda, bioconda, and anaconda tools, which install on your machine at launch.
 To add a tool, you may filter by name, and click the green plus button.<br>
-For more information, see the [customization wiki page](./customization.md#conda).
+For more information, see the [customization wiki page](../customization.md#conda).
 
-![create-instance-part5](./img/create_instance/create-instance-part5.png)
+![create-instance-part5](../img/create_instance/create-instance-part5.png)
 
 ### 8. Volumes
 
 Create, attach, and mount a new volume or attach and mount an already existing volume to the machine.
 When creating a new volume you can choose the name, the path it gets mounted to and a volume size in GB.
-If you want to know more about volumes, see the [Volumes](./volumes.md) wiki page.
+If you want to know more about volumes, see the [Volumes](../volumes.md) wiki page.
 You will see a selection of volumes which are queued for creation and existing volumes you have chosen for attachment below. 
 
 
@@ -132,4 +132,4 @@ In order to meet all project requirements of all projects that use SimpleVM as c
 
 Please bear this in mind for all resources, regardless of the limitation:
 Only use them for as long as you need them. If a machine is not needed, for example because it is idle, create a snapshot of the machine and delete it.
-You can then use the snapshot to start a new machine when the resource is needed again. This prevents unnecessary use of resources. When deleting machines, please also consider the notes on [backups and persistence of data](./backup.md).
+You can then use the snapshot to start a new machine when the resource is needed again. This prevents unnecessary use of resources. When deleting machines, please also consider the notes on [backups and persistence of data](../backup.md).
