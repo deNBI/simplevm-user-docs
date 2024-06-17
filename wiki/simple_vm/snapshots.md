@@ -30,8 +30,8 @@ A typical workflow can be:
 
 ### Create a snapshot
 
-After starting a machine you can go to the [instance overview](instance_overview.md#9-action-on-one-machine) tab 
-and create a snapshot, or you create one on the [detail page](instance_detail.md#general-information).
+After starting a machine you can go to the [instance overview](./Instance/instance_overview.md#9-action-on-one-machine) tab 
+and create a snapshot, or you create one on the [detail page](./Instance/instance_detail.md#general-information).
 A window opens where you can enter a name for your snapshot. Confirm to create a snapshot.
 
 ![create snapshot](./img/snapshots/create_snapshot.png)
@@ -53,7 +53,7 @@ A window opens where you can enter a name for your snapshot. Confirm to create a
 
 ### Boot from a snapshot
 
-After you successfully created the snapshot, you can go to the [new instance](./create_instance.md#5-image-selection) 
+After you successfully created the snapshot, you can go to the [new instance](./Instance/create_instance.md#5-image-selection) 
 tab and choose your created snapshot as an image to start a vm. 
 
 ![start_vm_from_snap](./img/snapshots/startsnap.png)
