@@ -199,10 +199,17 @@ Password: denbi
 
 ???+ info "Password prompt on inactivity"
     It may happen that, because of inactivity, a prompt for the password of the ubuntu user shows: 
+
+    ```
+    denbi
+    ```
+
+???+ warning "[DEPRECATED] Password prompt on inactivity"
+    It may happen that, because of inactivity, a prompt for the password of the ubuntu user shows: 
+
     ```
     ogvkyf
     ```
-
 Now you can work with Apache Guacamole by web browser.
 
 ![guacamole_resenv](./img/customization/guacamole_resenv.png)
