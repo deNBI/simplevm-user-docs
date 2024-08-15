@@ -127,7 +127,7 @@ In the table from the example output, the device you look for would be vde.
 Format the volume with a filesystem, e.g. `ext4` or `xfs`:
 
 ```shell
-mkfs.ext4 /dev/vdx
+sudo mkfs.ext4 /dev/vdx
 ```
 
 ## Mount a volume
@@ -169,7 +169,7 @@ lsblk -o NAME,SIZE,MOUNTPOINT,FSTYPE,TYPE | egrep -v "^loop"
 If you don't need the volume you can unmount it with:
 
 ```shell
-umount /dev/device_name
+sudo umount /dev/device_name
 ```
 
 ### After a vm restart
