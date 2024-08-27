@@ -38,3 +38,11 @@ In detail one can see:
 Further, you can take actions as for each instance on the [instance-detail page](../Instance/instance_detail.md).
 
 
+## Additional information
+
+Similar to the functions delivered on the instance detail page for single virtual machines one call also get information on the following aspects:
+
+- Volumes
+- Installed Conda packages and corresponding logs
+- User Management 
+- Cluster Event logs
