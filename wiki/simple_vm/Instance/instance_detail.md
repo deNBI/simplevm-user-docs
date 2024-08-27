@@ -81,6 +81,8 @@ When problems with the access occur, a renewal of the backend might fix the prob
 The user management enables you to grant and revoke access to the research environment. 
 To grant access, a user has to be a member of the project.
 
+[users](../img/instance_detail/user_management.png  )
+
 
 ???+ warning "Concurrent sessions"
     This doesn't automatically enable concurrent sessions, i.e., your session terminates
@@ -94,3 +96,11 @@ To grant access, a user has to be a member of the project.
 
 The conda tab shows which conda packages got installed on the machines during startup.
 Below a log of the installation can be viewed and downloaded as a `PDF` or `.txt`-file
+
+
+## Event logs
+
+It is possible to display all actions that have changed the status of the machine in tabular form.
+The event log shows actions performed by users, such as starting and stopping machines, as well as system actions (for example, when the data center shuts down the machines for maintenance work). A date and the person or system responsible for the action is specified.
+
+![events](../img/instance_detail/details_events.png)
