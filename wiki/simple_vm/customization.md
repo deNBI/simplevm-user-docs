@@ -24,7 +24,7 @@ Filter by name to find the tools you need.<br>
 Click on the green plus sign to add the tool or click the red minus sign to remove the tool from your
 selection of tools.<br>
 
-![conda_table_with_selections](./img/create_instance/new_instance_conda.png)
+![conda_table_with_selections](./img/create_instance/conda_tools.png)
 
 After choosing your tools and packages, you need to read and confirm the proceeding installation process.
 
