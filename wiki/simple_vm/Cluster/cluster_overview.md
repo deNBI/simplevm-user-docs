@@ -21,21 +21,19 @@ You can set how many clusters you want to see on a page and scroll through the p
 
 ![cluster_card](../img/cluster_overview/card_overview.png)
 
-See the name, the status, the project, and the creator of the cluster.<br>
-Click on the name to get to the [Detail page](cluster_detail.md).
-## How to connect
+See the name, the status, the project, and the creator of the cluster.
+Also one gets shown the batches and the number of active machines per batch. 
+Click on the name or the corresponding icon to get to the [Detail page](cluster_detail.md).
+### How to connect
 
-![how_to_connect](../img/cluster_overview/how_to_connect.png)
-
-Click `How to connect`.
-A list with connection information opens depending on your cluster configuration.<br>
+A list with connection information is shown below, depending on your cluster configuration.
 
 ???+ info "SSH"
     The SSH command tells you how to connect to your master node.
 
 ## Scale-Up your cluster
 
-To expand your cluster and add more workers, click `Scale-up`.
+To expand your cluster and add more workers, click `Scale Cluster up`.
 
 ![scale-up](../img/cluster_overview/scale_up_modal.png)
 
@@ -111,9 +109,7 @@ recognizes the removed worker nodes.**
 ###  Configure your cluster
 
 Your have to reconfigure your master node to recognize the removed worker nodes.
-A modal opens after removing the worker nodes, which shows you the necessary steps.
-
-![successful_down_scaling](../img/cluster_overview/scale_down_successful.png)
+A modal opens after removing the worker nodes, which shows you the necessary steps. The operation is similar to the upscaling-mechanism.
 
 Connect to your master instance with SSH.<br>
 Download the scaling script:
@@ -152,12 +148,9 @@ sudo /etc/init.d/slurmctld restart
 
 To stop your cluster, click `Stop`. A modal opens, asking you to confirm your action.
 
-![stop_cluster_modal](../img/cluster_overview/stop_modal.png)
-
 ## Delete your cluster
 
 To delete your cluster, click `Delete`. A modal opens, asking you to confirm your action.
 
-![delete_cluster_modal](../img/cluster_overview/delete_modal.png)
 
 If you have volumes attached to a node of your cluster, they get detached but not deleted.
