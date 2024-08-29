@@ -56,7 +56,7 @@ On the snapshot overview page one can filter all snapshots one is allowed to vie
 
 ### Boot from a snapshot
 
-After you successfully created the snapshot, you can go to the [new instance](./Instance/create_instance.md#5-image-selection) 
+After you successfully created the snapshot, you can go to the [new instance](./Instance/create_instance.md#image-selection) 
 tab and choose your created snapshot as an image to start a VM.
 If one clicks on the creation button, the correspondig project a snapshot is associated with, and the snapshot is preselected on the [instance creation page](./Instance/create_instance.md).
 

@@ -54,7 +54,7 @@ Therefore, you should use ephemeral storage for temporary data that often change
 (e.g. cache, buffers, or session data) or data often replicated across your environment.
 If you need to persist data from an ephemeral, create a backup on a volume.
 See the [Best practices for data backup](../backup.md) wiki page for more information.<br>
-Use [Volumes](#8-volumes) for data that must persist.
+Use [Volumes](#volumes) for data that must persist.
 
 ???+ danger "Backup important data from an ephemeral"
     Ephemeral storage is a fleeting storage. 
