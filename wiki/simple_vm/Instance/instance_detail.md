@@ -78,6 +78,7 @@ You are able to copy the link, view the logs of the research environment setup a
 Deleting the backend of the research environment will make the research environment unaccessible.
 When problems with the access occur, a renewal of the backend might fix the problem.
 
+## User Management
 The user management enables you to grant and revoke access to the research environment. 
 To grant access, a user has to be a member of the project.
 
