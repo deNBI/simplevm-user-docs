@@ -30,7 +30,7 @@ A typical workflow can be:
 
 ### Create a snapshot
 
-After starting a machine you can go to the [instance overview](./Instance/instance_overview.md#further-details-and-action) tab 
+After starting a machine you can go to the [instance overview](./Instance/instance_overview.md#further-details-and-actions) tab 
 and create a snapshot, or you create one on the [detail page](./Instance/instance_detail.md#general-information).
 A window opens where you can enter a name for your snapshot. Confirm to create a snapshot.
 
