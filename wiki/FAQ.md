@@ -8,7 +8,7 @@ Make sure that you use the correct SSH key when accessing the machine.
 If you have changed your SSH key since creating the machine, it will not be automatically changed on the machines already running. The connection to these VMs still requires the key that was set at the time of creation. 
 The private key is always used to connect to the machine.
 
-You can find more about SSH keys [here](./simple_vm/keypairs.md#ssh-keys-and-sharing-access).
+You can find more about SSH keys [here](./simple_vm/keypairs.md#ssh-keys-and-how-to-share-access).
 
 Maintenance may be performed at the site where your machines are running. Occasionally, malfunctions also occur during regular service.
 

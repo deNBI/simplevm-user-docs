@@ -24,25 +24,7 @@ Filter by name to find the tools you need.<br>
 Click on the green plus sign to add the tool or click the red minus sign to remove the tool from your
 selection of tools.<br>
 
-![conda_table_with_selections](./img/create_instance/new_instance_conda.png)
-
-After choosing your tools and packages, you need to read and confirm the proceeding installation process.
-
-![conda_confirmation_needed](./img/create_instance/new_instance_okay.png)
-
-### Installation process
-
-??? info "Minoconda3"
-    Miniconda3 will install, which is a lightweight package manager.
-    We decided against the full Anaconda set of tools due to its size with over 1500 packages.<br>
-    If you wish to install Anaconda, you will have to choose it from the list of packages.
-
-We create a temporary private and public key pair to access your virtual machine at launch, and to
-install your selection with [Ansible](https://docs.ansible.com/ansible/latest/index.html).
-At the end of the installation process we remove the temporary key from your vm and copy your public key onto it,
-regardless of whether the installation of your selection succeeds or fails.<br>
-You may download the installation logs as a PDF or TXT file. See [Instance Detail](./Instance/instance_detail.md#ansible-logs) 
-for more information.
+![conda_table_with_selections](./img/create_instance/conda_tools.png)
 
 ### Environment
 
