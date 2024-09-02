@@ -15,7 +15,7 @@ The instances are connected to each other and can thus exchange data.
 <br>
 In SimpleVM, you can add worker nodes to your cluster, called **up scaling**.
 You can remove worker nodes from your cluster, called **down scaling**.
-See the instructions [here](./cluster_overview.md#3-scale-up).
+See the instructions [here](./cluster_overview.md#scale-up-your-cluster).
 
 ## Shared directories
 

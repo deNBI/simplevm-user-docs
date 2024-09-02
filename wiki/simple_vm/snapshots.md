@@ -11,7 +11,7 @@ de.NBI provides the same selection of images for every cloud site.
 
 ## Snapshot
 
-A snapshot is an exact copy of your virtual machine.
+A snapshot is an exact copy of your virtual machines hard disk storage.
 You use the snapshot of an instance as the basis for another instance.<br>
 A typical workflow can be:
 
@@ -25,12 +25,12 @@ A typical workflow can be:
 
 ???+ info "Snapshot limitation"
     A snapshot preserves the full state of RAM. Therefore, you can only snapshot a virtual machine with up to a 
-    maximum of 256 GB RAM.
+    maximum of 256 GB RAM. Please also consider our information on snapshots of running instances!
 
 
 ### Create a snapshot
 
-After starting a machine you can go to the [instance overview](./Instance/instance_overview.md#9-action-on-one-machine) tab 
+After starting a machine you can go to the [instance overview](./Instance/instance_overview.md#further-details-and-actions) tab 
 and create a snapshot, or you create one on the [detail page](./Instance/instance_detail.md#general-information).
 A window opens where you can enter a name for your snapshot. Confirm to create a snapshot.
 
@@ -45,15 +45,21 @@ A window opens where you can enter a name for your snapshot. Confirm to create a
 
 ![overview](./img/snapshots/overview.png)  
 
-1. Set how many snapshots you want to see on a page and scroll through the pages.
-2. Filter your list of snapshots. Filter by name, project name and the OpenStack ID of the snapshot.
-3. Perform an action on all selected snapshots. 'Select all' to select all snapshots or `select` specific snapshots.
-4. Information about your snapshot: the name of the snapshot, the project name, and the status.
-5. Delete the snapshot.
+On the snapshot overview page one can filter all snapshots one is allowed to view and to either start a new instance with them or delete the snapshot. The information delivered for a certain snapshot includes:
+ - the snapshot name
+ - the snapshot status
+ - the creation date (if the snapshot creation is finished)
+ - the name of the machine the snapshot originated from
+ - the OpenStack ID of the snapshot
+ - the description entered on creation
+
 
 ### Boot from a snapshot
 
-After you successfully created the snapshot, you can go to the [new instance](./Instance/create_instance.md#5-image-selection) 
-tab and choose your created snapshot as an image to start a vm. 
+After you successfully created the snapshot, you can go to the [new instance](./Instance/create_instance.md#image-selection) 
+tab and choose your created snapshot as an image to start a VM.
+If one clicks on the creation button, the correspondig project a snapshot is associated with, and the snapshot is preselected on the [instance creation page](./Instance/create_instance.md).
+
+The snapshot selection is also always when entering the instance creation over the navigation.
 
 ![start_vm_from_snap](./img/snapshots/startsnap.png)

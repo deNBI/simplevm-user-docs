@@ -13,6 +13,8 @@ A message informs you if you can't start a cluster. This can happen if:
     - Ask an administrator of your project to start a cluster for you.
     - Ask an administrator of your project to change the appropriate setting.
 
+Basically, the handling of starting a new cluster is similar to that of a [single instance](../Instance/create_instance.md).    
+
 ## Resource overview
 
 ![project_resource_overview](../img/new_cluster/resource_overview.png)
@@ -78,6 +80,9 @@ Each worker batch has its own number.
 You can have as many batches as you have resources and flavors available.<br>
 Click the batches tab to switch between batches.
 
+Below one can see the new resource usage which results in the chosen Batch configurations.
+To save a certain batch configuration and add another batch, one has to click on the "Save batch"-button that is next to the input for the number of workers of a certain flavor type.
+
 ### Select flavor and count for a worker batch
 
 Select the flavor for a worker batch and set the count of wanted workers.
@@ -93,6 +98,10 @@ Select the flavor and worker count for this batch.
 ### Remove a worker batch
 
 Click `Remove Worker Batch` to remove the selected worker batch from your cluster configuration.
+
+## Grant access for members
+
+Like for the start of a [single instance](../Instance/create_instance.md) one can also grant access to the machine for other members of the project the cluster gets started in.
 
 ## Start your cluster
 

@@ -29,13 +29,9 @@ sudo apt install mosh
 ```
 
 #### Install Mosh on your Virtual Machine
-You have two ways of installing Mosh on your virtual machine:
-
-1. By having it installed on vm creation, [see](../../simple_vm/Instance/create_instance.md#mosh-udp-ports).
-
-2. Installing it manually:  
+Y
 For this Tutorial we chose Ubuntu 18.04 LTS as the image running on our virtual machine.
-First, connect to your VM. Information on how to connect can be cound on the [instance overview](../../simple_vm/Instance/instance_overview.md#8-how-to-connect) and on the [instance detail page](../../simple_vm/Instance/instance_detail.md#general-information)
+First, connect to your VM. Information on how to connect can be cound on the [instance overview](../../simple_vm/Instance/instance_overview.md#further-details-and-actions) and on the [instance detail page](../../simple_vm/Instance/instance_detail.md#general-information)
 In our case we need to use ssh:
 ```
 ssh -i /path/to/your/ssh/private/key ubuntu@129.70.51.75 -p 30024
