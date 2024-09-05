@@ -175,7 +175,6 @@ sudo nano /etc/fstab
 
 Add a line like:
 
-Here is the revised example:
 
 ```shell
 UUID=uuid_of_your_volume /vol/RENAME_ME auto defaults,nofail 0 2
