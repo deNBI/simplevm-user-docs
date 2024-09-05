@@ -176,8 +176,9 @@ sudo nano /etc/fstab
 Add a line like:
 
 ```shell
-UUID=uuid_of_your_volume	/vol/RENAME_ME	auto	defaults	0	2
+UUID=uuid_of_your_volume /vol/RENAME_ME auto defaults,nofail 0 2
 ```
+The `nofail` option prevents boot failure if the volume cannot be mounted.
 
 Save and exit with ++ctrl+x++ and confirm when asked whether you want to save.
 To mount the volume run:
