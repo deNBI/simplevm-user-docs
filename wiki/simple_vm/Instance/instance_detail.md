@@ -116,9 +116,9 @@ You can activate the rescue mode by opening the detail page of an instance and c
 
 For now, only project administrators have access to this feature. If you wish to rescue your instance but cannot see this button, please contact your project administration for help.
 
-When the instance is in "RESCUED" state, you can access the rescued instance with the same connection information as the original instnace, then download any data you wish to save. You can exit the "RESCUED" state by clicking on the "Unrescue" button, it will return the instance to its original state.
+When the instance is in "RESCUED" state, you can access the rescued instance with the same connection information as the original instance, then download any data you wish to save. You can exit the "RESCUED" state by clicking on the "Unrescue" button, which will return the instance to its original state.
 
 ![unrescue](../img/instance_detail/detail_unrescue.jpg)
 
-???+ warning "After the rescue"
-    The rescue mode only serves as a mean to recover data from an instance that doesn't work properly. After you have used the rescue mode and downloaded the necessary data, it is advised to delete the instance and start a new one instead of trying to fix it.
+???+ warning "Purpose of rescue mode"
+    The rescue mode only serves as a mean to recover data from an instance that doesn't work properly. After you have used the rescue mode and downloaded the necessary data, it is advised to delete the instance and start a new one instead of using the rescue mode for trying to fix it.
