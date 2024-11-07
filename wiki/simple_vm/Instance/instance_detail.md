@@ -110,7 +110,7 @@ The event log shows actions performed by users, such as starting and stopping ma
 
 If your instance is in a state of error so that you can no longer work with the instance correctly, there is the option to rescue the instance. This will boot a new instance with the same image as the original instance, then attach the root disk of the original instance to the new instance for data recovery. (See also [the Openstack documentation](https://docs.openstack.org/nova/latest/user/rescue.html) for more information.)
 
-You can activate the rescue mode by opening the detail page of an instance and clicking on the "Resuce" button. 
+You can activate the rescue mode by opening the detail page of an instance and clicking on the "Rescue" button. 
 
 ![rescue](../img/instance_detail/detail_rescue.jpg)
 
