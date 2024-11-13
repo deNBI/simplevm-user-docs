@@ -130,5 +130,6 @@ nav:
   - 'Tutorials' :
     - 'Tutorials': Tutorials/index.md
     - 'SimpleVM File Transfer' : Tutorials/File_Transfer_Methods/index.md
+    - 'Persistent SSH Sessions': Tutorials/Persistent_SSH_Sessions/index.md
   - 'FAQ' : 'FAQ.md'
 

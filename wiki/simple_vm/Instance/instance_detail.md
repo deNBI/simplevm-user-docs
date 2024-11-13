@@ -105,3 +105,20 @@ It is possible to display all actions that have changed the status of the machin
 The event log shows actions performed by users, such as starting and stopping machines, as well as system actions (for example, when the data center shuts down the machines for maintenance work). A date and the person or system responsible for the action is specified.
 
 ![events](../img/instance_detail/details_events.png)
+
+## Rescue instance
+
+If your instance is in a state of error so that you can no longer work with the instance correctly, there is the option to rescue the instance. This will boot a new instance with the same image as the original instance, then attach the root disk of the original instance to the new instance for data recovery. (See also [the Openstack documentation](https://docs.openstack.org/nova/latest/user/rescue.html) for more information.)
+
+You can activate the rescue mode by opening the detail page of an instance and clicking on the "Rescue" button. 
+
+![rescue](../img/instance_detail/detail_rescue.jpg)
+
+For now, only project administrators have access to this feature. If you wish to rescue your instance but cannot see this button, please contact your project administration for help.
+
+When the instance is in "RESCUED" state, you can access the rescued instance with the same connection information as the original instance, then download any data you wish to save. You can exit the "RESCUED" state by clicking on the "Unrescue" button, which will return the instance to its original state.
+
+![unrescue](../img/instance_detail/detail_unrescue.jpg)
+
+???+ warning "Purpose of rescue mode"
+    The rescue mode only serves as a mean to recover data from an instance that doesn't work properly. After you have used the rescue mode and downloaded the necessary data, it is advised to delete the instance and start a new one instead of using the rescue mode for trying to fix it.
