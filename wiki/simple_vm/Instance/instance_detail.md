@@ -114,7 +114,7 @@ You can activate the rescue mode by opening the detail page of an instance and c
 
 ![rescue](../img/instance_detail/detail_rescue.jpg)
 
-For now, only project administrators have access to this feature. If you wish to rescue your instance but cannot see this button, please contact your project administration for help.
+You can only rescue your own instances. If you wish to rescue your instance but cannot see this button, please contact your project administration for help.
 
 When the instance is in "RESCUED" state, you can access the rescued instance with the same connection information as the original instance, then download any data you wish to save. You can exit the "RESCUED" state by clicking on the "Unrescue" button, which will return the instance to its original state.
 
@@ -122,3 +122,28 @@ When the instance is in "RESCUED" state, you can access the rescued instance wit
 
 ???+ warning "Purpose of rescue mode"
     The rescue mode only serves as a mean to recover data from an instance that doesn't work properly. After you have used the rescue mode and downloaded the necessary data, it is advised to delete the instance and start a new one instead of using the rescue mode for trying to fix it.
+
+### Manual mounting
+
+The root disk of the original instance is usually displayed as /dev/vdb. You can confirm this as well as the mountpoint of the disk by executing the following command:
+```
+sudo lsblk
+```
+![lsblk](../img/instance_detail/rescue_vdb.png)
+
+Sometimes this drive is not mounted automatically or only partially mounted.
+
+![vdb1_not_mounted](../img/instance_detail/rescue_vdb1.png)
+
+ In this case, you can first create a directory, then mount the missing drive manually.
+```
+sudo mkdir /PATH/OF/YOUR/DIRECTORY
+sudo mount /dev/DRIVE_TO_MOUNT /PATH/OF/YOUR/DIRECTORY
+```
+
+![vdb1_mounted](../img/instance_detail/rescue_vdb1_mounted.png)
+
+After you have successfully mounted the drive, you can access the data by going to the directory you created.
+
+???+ info "Instance with volume"
+    You can still access attachted volumes in rescude mode. However, you cannot attach a volume to an already rescued instance. If you are using an instance with ephemeral storage and worry about data loss, we recommend attaching a volume to it when creating the instance.
