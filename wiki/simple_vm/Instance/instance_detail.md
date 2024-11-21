@@ -125,13 +125,13 @@ When the instance is in "RESCUED" state, you can access the rescued instance wit
 
 ### Manual mounting
 
-The root disk of the original instance is usually displayed as /dev/vdb. You can confirm this as well as the mountpoint of the disk by executing the following command:
+The root volume of the rescued instance is usually displayed as /dev/vdb. You can confirm this as well as the mountpoint of the disk by executing the following command:
 ```
 sudo lsblk
 ```
 ![lsblk](../img/instance_detail/rescue_vdb.png)
 
-Sometimes this drive is not mounted automatically or only partially mounted.
+Sometimes the root volume from the rescued vm is not mounted automatically or only partially mounted.
 
 ![vdb1_not_mounted](../img/instance_detail/rescue_vdb1.png)
 
@@ -143,7 +143,7 @@ sudo mount /dev/DRIVE_TO_MOUNT /PATH/OF/YOUR/DIRECTORY
 
 ![vdb1_mounted](../img/instance_detail/rescue_vdb1_mounted.png)
 
-After you have successfully mounted the drive, you can access the data by going to the directory you created.
+After you have successfully mounted the root volume of the rescued vm, you can access the data by going to the directory you created.
 
 ???+ info "Instance with volume"
-    You can still access attachted volumes in rescude mode. However, you cannot attach a volume to an already rescued instance. If you are using an instance with ephemeral storage and worry about data loss, we recommend attaching a volume to it when creating the instance.
+    You can still access attached volumes in rescude mode. However, you cannot attach a volume to an already rescued instance. If you are using an instance with ephemeral storage and worry about data loss, we recommend attaching a volume to it when creating the instance.
