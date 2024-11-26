@@ -123,6 +123,9 @@ When the instance is in "RESCUED" state, you can access the rescued instance wit
 ???+ warning "Purpose of rescue mode"
     The rescue mode only serves as a mean to recover data from an instance that doesn't work properly. After you have used the rescue mode and downloaded the necessary data, it is advised to delete the instance and start a new one instead of using the rescue mode for trying to fix it.
 
+???+ info "Adding other users"
+    Only the creator of the original VM can access the rescued instance. However, if you're not sure what to do after the rescue or how to preserve your data, you can connect to the rescued instance, then add another user's public key (e.g. from an administator of your project) using the command line ([check here](../keypairs.md#share-access) for how to do it). The added user will be able to connect to the rescued instance with the same command you are using.
+
 ### Manual mounting
 
 The root volume of the rescued instance is usually displayed as /dev/vdb. You can confirm this as well as the mountpoint of the disk by executing the following command:
