@@ -146,4 +146,4 @@ sudo mount /dev/DRIVE_TO_MOUNT /PATH/OF/YOUR/DIRECTORY
 After you have successfully mounted the root volume of the rescued vm, you can access the data by going to the directory you created.
 
 ???+ info "Instance with volume"
-    You can still access attached volumes in rescude mode. However, you cannot attach a volume to an already rescued instance. If you are using an instance with ephemeral storage and worry about data loss, we recommend attaching a volume to it when creating the instance.
+    You can still access attached volumes in rescude mode. However, you cannot attach a volume to an already rescued instance, you can instead try to add a volume to the instance before going into rescue mode. If you are using an instance and worry about data loss, we recommend attaching a volume to it when creating the instance.
