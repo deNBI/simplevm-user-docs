@@ -82,7 +82,7 @@ When problems with the access occur, a renewal of the backend might fix the prob
 The user management enables you to grant and revoke access to the research environment. 
 To grant access, a user has to be a member of the project.
 
-[users](../img/instance_detail/user_management.png  )
+![users](../img/instance_detail/user_management.png)
 
 
 ???+ warning "Concurrent sessions"
