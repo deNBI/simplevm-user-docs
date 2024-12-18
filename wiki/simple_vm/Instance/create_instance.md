@@ -84,9 +84,11 @@ Find more information on Browser-based Research Environments [here](../customiza
 
 #### Conda tools
 
-You may choose conda, bioconda, and anaconda tools, which install on your machine at launch.
+You may choose conda and bioconda tools, which will be installed on your machine at launch.
 To add a tool, you may filter by name, and click the green plus button.<br>
 For more information, see the [customization wiki page](../customization.md#conda).
+???+ info "Anaconda License Changes"
+    Due to licence changes, only packages that are available through the Conda-Forge and Bioconda channels are still offered in this selection.
 
 ![conda-tools](../img/create_instance/conda_tools.png)
 
