@@ -32,6 +32,7 @@ markdown_extensions:
 nav:
   - 'Home' : index.md
   - 'Group Permissions': simple_vm/permissions.md
+  - 'Project Management': simple_vm/projects.md
   - 'VM Management':
     - simple_vm/Instance/index.md
     - 'Create Instance': simple_vm/Instance/create_instance.md

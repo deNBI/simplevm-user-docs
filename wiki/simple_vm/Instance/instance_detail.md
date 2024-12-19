@@ -82,7 +82,7 @@ When problems with the access occur, a renewal of the backend might fix the prob
 The user management enables you to grant and revoke access to the research environment. 
 To grant access, a user has to be a member of the project.
 
-[users](../img/instance_detail/user_management.png  )
+![users](../img/instance_detail/user_management.png)
 
 
 ???+ warning "Concurrent sessions"
@@ -123,6 +123,9 @@ When the instance is in "RESCUED" state, you can access the rescued instance wit
 ???+ warning "Purpose of rescue mode"
     The rescue mode only serves as a mean to recover data from an instance that doesn't work properly. After you have used the rescue mode and downloaded the necessary data, it is advised to delete the instance and start a new one instead of using the rescue mode for trying to fix it.
 
+???+ info "Adding other users"
+    Only the creator of the original VM can access the rescued instance. However, if you're not sure what to do after the rescue or how to preserve your data, you can connect to the rescued instance, then add another user's public key (e.g. from an administator of your project) using the command line ([check here](../keypairs.md#share-access) for how to do it). The added user will be able to connect to the rescued instance with the same command you are using.
+
 ### Manual mounting
 
 The root volume of the rescued instance is usually displayed as /dev/vdb. You can confirm this as well as the mountpoint of the disk by executing the following command:
@@ -146,4 +149,4 @@ sudo mount /dev/DRIVE_TO_MOUNT /PATH/OF/YOUR/DIRECTORY
 After you have successfully mounted the root volume of the rescued vm, you can access the data by going to the directory you created.
 
 ???+ info "Instance with volume"
-    You can still access attached volumes in rescude mode. However, you cannot attach a volume to an already rescued instance. If you are using an instance with ephemeral storage and worry about data loss, we recommend attaching a volume to it when creating the instance.
+    You can still access attached volumes in rescude mode. However, you cannot attach a volume to an already rescued instance, you can instead try to add a volume to the instance before going into rescue mode. If you are using an instance and worry about data loss, we recommend attaching a volume to it when creating the instance.
