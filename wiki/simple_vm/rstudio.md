@@ -1,3 +1,9 @@
+
+
+# RStudio Package Manager
+To enable a faster installation of RStudio packages directly via binaries, our RStudio images use the [RStudio Package Manager (rspm)](https://github.com/cran4linux/rspm).
+
+
 # Enable concurrent sessions for RStudio
 
 By default, one concurrent session can log in per username.
