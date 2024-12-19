@@ -122,6 +122,10 @@ Afterward a prompt to log in to RStudio shows.
 
 ![rstudio_login](./img/customization/rstudio_login.png)
 
+#### RStudio Package Manager
+To enable a faster installation of RStudio packages directly via binaries, our RStudio images use the [RStudio Package Manager (rspm)](https://github.com/cran4linux/rspm).
+
+
 #### Login credentials
 
 Use the following credentials:
