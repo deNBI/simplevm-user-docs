@@ -47,8 +47,8 @@ Shows the image the VM runs on.
 
 To avoid idling of unused machines, we require periodic confirmation of the VM usage. The frequency of confirmation depends on the type of VM:
 
-* Standard VMs: every 165 days
-* GPU VMs: every 30 days
+* Standard VMs: every 180 days
+* GPU VMs: every 15 days
 
 Reminder emails will be sent to users at these intervals to confirm the continued necessity of their VMs.
 
