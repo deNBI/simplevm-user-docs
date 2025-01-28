@@ -42,6 +42,36 @@ Shows information about the resources assigned to the virtual machine, like the 
 
 Shows the image the VM runs on. 
 
+### Confirmation of Usage
+
+
+To avoid idling of unused machines, we require periodic confirmation of the VM usage. The frequency of confirmation depends on the type of VM:
+
+* Standard VMs: every 180 days
+* GPU VMs: every 15 days
+
+Reminder emails will be sent to users at these intervals to confirm the continued necessity of their VMs.
+
+**Confirmation Process**
+
+1. **Initial Reminder**: A normal reminder email will be sent, including a link to the detailed overview of the instance.
+2. **User Confirmation**: Users can confirm the necessity of their VM by clicking the "Confirm Necessity" button on the instance detail page.
+
+![confirm_necessity](../img/instance_detail/confirmation_needed.png)
+
+3. **Second Reminder**: If the VM is not confirmed within a specific time frame, a second reminder email will be sent.
+4. **Deletion Reminder**: If the VM remains unconfirmed after another specific time frame, a deletion reminder email will be sent.
+
+**Important Note**
+
+Once the deletion reminder has been sent, the VM may be deleted at any time. However, users can still confirm the necessity of their VM even after receiving the deletion reminder:
+
+![set_for_deletion](../img/instance_detail/set_for_deletion.png)
+
+
+By following this confirmation process, we aim to ensure that only actively used VMs remain in operation, reducing unnecessary resource consumption and costs.
+
+
 ## Volumes
 
 ![volumes](../img/instance_detail/detail_volume.png)
