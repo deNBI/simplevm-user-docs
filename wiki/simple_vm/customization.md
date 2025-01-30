@@ -84,6 +84,11 @@ If you don't grant access to other members of your project on the detail page,
 only the person who started the vm may access the research environment.
 
 
+#### On Connection configurations
+
+The connection configuration (also called the backend) ensures that a defined user group can be granted access to a resource (in this case, the virtual machine) that is located behind a defined path. This configuration is stored in a dedicated service running in SimpleVM. These configurations serve as rules for accessing research environments that can be reached via the defined URLs. The connection is made on the basis of a reverse proxy using the OpenResty technology.
+If users who are authorized to access the virtual machine in SimpleVM are unable to do so, it may be helpful to re-create the connection information. To do this, use the corresponding button below the information.
+
 ### JupyterLab
 
 >[JupyterLab](https://jupyter.org/) is the latest web-based interactive development environment for notebooks, code, 
