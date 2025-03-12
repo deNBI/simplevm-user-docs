@@ -55,3 +55,9 @@ In a last step you have to reload the daemon and restart docker:
 
 Now the docker build process should be successful.
 
+
+### I have problems downloading packages from GitHub (e.g. in R)
+
+If you have problems with installing packages from GitHub, the GitHub rate limit might be the cause.
+Using authenticated requests can increase the amount of allowed requests significantly.
+Find more on this in the [GitHub API Readme](https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api).
