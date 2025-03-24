@@ -7,6 +7,9 @@ theme:
     accent: 'cyan'
   logo: 'img/SimpleVM_logo_wiki.svg'
   favicon: 'img/simplevm_favicon.svg'
+  features:
+    - content.code.copy
+
 repo_name: 'deNBI/simplevm-user-docs'
 repo_url: 'https://github.com/deNBI/simplevm-user-docs'
 edit_uri: blob/master/wiki/
@@ -14,7 +17,7 @@ markdown_extensions:
   - admonition
   - codehilite
   - footnotes
-  - toc:
+  - toc: 
       permalink: true
   - pymdownx.betterem:
       smart_enable: all

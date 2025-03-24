@@ -163,6 +163,12 @@ registration process.<br>
 Sometimes, participants can have trouble registering.
 Having them register beforehand, so you can add them, helps for a smoother workshop start.
 
+Although we recommend that our users authenticate via our standard registration process, we understand that this can be more of a hurdle for users who have only registered for a workshop. For this reason, we would like to point out that LifeScience AAI offers the possibility of so-called hostel accounts. These accounts work with a simple username-password scheme and allow your participants to register very easily and quickly.
+
+For the creation of such a hostel account, you can give the following link to your participants:
+[https://signup.aai.lifescience-ri.eu/non/registrar/?vo=lifescience_hostel&targetnew=https%3A%2F%2Flifescience-ri.eu%2Faai%2Fhow-use&targetexisting=https%3A%2F%2Flifescience-ri.eu%2Faai%2Fhow-use&targetextended=https%3A%2F%2Flifescience-ri.eu%2Faai%2Fhow-use](https://signup.aai.lifescience-ri.eu/non/registrar/?vo=lifescience_hostel&targetnew=https%3A%2F%2Flifescience-ri.eu%2Faai%2Fhow-use&targetexisting=https%3A%2F%2Flifescience-ri.eu%2Faai%2Fhow-use&targetextended=https%3A%2F%2Flifescience-ri.eu%2Faai%2Fhow-use)
+
+
 ### Start machines before the workshop starts
 
 You should start machines for your participants before your workshop begins.

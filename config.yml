@@ -25,6 +25,8 @@ theme:
   features:
     - navigation.top
     - navigation.indexes
+    - content.code.copy
+
 repo_name: 'deNBI/simplevm-user-docs'
 repo_url: 'https://github.com/deNBI/simplevm-user-docs'
 edit_uri: blob/master/wiki/
