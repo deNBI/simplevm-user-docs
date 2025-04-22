@@ -98,7 +98,17 @@ Select an image.
 See [Images and Snapshots](snapshots.md) for more information about images and snapshots.<br>
 Optionally, select a research environment template.
 See [Research environments](customization.md#research-environments) for more information about browser-based
-research environments.
+research environments.<br>
+Optionally, you can attach a volume to the participant machines.
+
+![attach-new-volume](./img/workshop/attach_new_volume.png)
+
+A new volume will be created and attached for each participant machine with the given configurations.
+
+![attach-existing-volume](./img/workshop/attach_existing_volume.jpg)
+
+You can also choose to attach one of your own existing volumes. In this case, your volume will be cloned multiple
+times and attached to each participant machine with the given configurations.
 
 
 ??? tip "Base image with template versus research environment image"
@@ -181,7 +191,7 @@ and prevents troubleshooting when you actually want to conduct your workshop.
 
 You can start a machine with your own volume for all participants to provide additional or
 customized file data. Copies of your volume are made and attachted to every participant's machine
-respectively.
+respectively. (See also [here](workshop.md#start-virtual-machines-for-your-participants).)
 In case this progress fails, it might affect the original volume you are using,
 you should therefore clone your volume beforehand hand use the cloned copy for starting participant
 machines.
