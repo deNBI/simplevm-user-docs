@@ -177,6 +177,15 @@ In rare cases, starting a vm can fail, or a snapshot can be faulty.
 Starting them beforehand, and making sure they run correctly, helps for a smoother workshop start 
 and prevents troubleshooting when you actually want to conduct your workshop.
 
+### Clone your volume to use for workshop machines
+
+You can start a machine with your own volume for all participants to provide additional or
+customized file data. Copies of your volume are made and attachted to every participant's machine
+respectively.
+In case this progress fails, it might affect the original volume you are using,
+you should therefore clone your volume beforehand hand use the cloned copy for starting participant
+machines.
+
 ### Explain SSH keys
 
 ???+ info
