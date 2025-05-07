@@ -59,6 +59,9 @@ Upon submitting the workflow form, you will be automatically redirected to the W
 ## Workshop Overview
 
 ![workshop-overview](./img/workshop/workshop_overview.png)
+/// caption
+The workshop overview page
+///
 
 ### Participants and Tutors
 
@@ -66,6 +69,9 @@ Upon submitting the workflow form, you will be automatically redirected to the W
 You can open the registration for the workshop via the `Create Invitation` button.
 This will create a link which you can share, where participants can request a registration.
 ![workshop-invitation](./img/workshop/workshop_invitation_link.png)
+/// caption
+Workshop overview page with invitation link under the workshop title
+///
 
 The user can then request a registration:
 ![workshop-registration](./img/workshop/workshop_registration.png)
@@ -90,6 +96,9 @@ At your workshop overview select "Create new instances".
 This will open the vm creation formular for the workshop:
 
 ![workshop_vms_form](./img/workshop/workshop_vms_form.png)  
+/// caption
+VM creation formular for a workshop
+///
 
 
 Select a flavor.
@@ -102,10 +111,16 @@ research environments.<br>
 Optionally, you can attach a volume to the participant machines.
 
 ![attach-new-volume](./img/workshop/attach_new_volume.png)
+/// caption
+Attaching a new volume for particpant machines
+///
 
 A new volume will be created and attached for each participant machine with the given configurations.
 
 ![attach-existing-volume](./img/workshop/attach_existing_volume.jpg)
+/// caption
+Attaching an existing volume for particpant machines
+///
 
 You can also choose to attach one of your own existing volumes. In this case, your volume will be cloned multiple
 times and attached to each participant machine with the given configurations.
@@ -130,6 +145,9 @@ After starting, a redirect takes you to the workshop instance overview where you
 of your machines.
 
 ![vm_overview](./img/workshop/workshop_vm_list.png)
+/// caption
+List of the created participant machines
+///
 
 #### Inform participants about their instances
 
