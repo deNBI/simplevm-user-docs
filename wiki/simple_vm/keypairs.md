@@ -158,7 +158,7 @@ nano .ssh/authorized_keys
    This opens the file that stores all the public keys that grant access to your virtual machine. 
    Your key is already in that file, don't change it.
 3. Copy the **public key** of the other person and add it in a new line after the other lines.<br>
-   Use ++ctrl+x++ to close the file.<br>
+   Use ++ctrl+x++ to close the file.<br> 
    Confirm when it asks whether you want to save your changes.
 
 Now the other user can access your virtual machine. 
@@ -168,3 +168,13 @@ If you experience any troubles, contact the helpdesk at [cloud-helpdesk@denbi.de
     Only add the ssh key of people you trust.<br>
     You have the responsibility for your virtual machine and all actions on it, 
     even if you share access with other people.
+
+
+## Compromised SSH Keys
+
+There are cases where your SSH private key can be damaged or leaked, which endangers the security of your
+virtual machines. A keypair can be compromised when its private key is stolen by an attacker or uploaded
+to a public website, or when the device storing the private key is lost.<br>
+Should you posess a SSH key that might be compromised, please contact the helpdesk at
+[cloud-helpdesk@denbi.de](mailto:cloud-helpdesk@denbi.de) with its public key so that we can block this
+keypair to prevent any unauthorized access with the compromised.
