@@ -39,4 +39,4 @@ curl -X POST http://simplevm.denbi.de/api/vms/YOUR_VM_OPENSTACK_ID/action/ -d 'o
 ```
 <br>
 
-For more API endpoints, please refer to [this page](http://simplevm.denbi.de/api/docs/).
+For more API endpoints, please refer to [this page](http://simplevm.denbi.de/portal/api/docs/).
