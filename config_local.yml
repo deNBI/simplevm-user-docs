@@ -49,6 +49,7 @@ nav:
     - 'Cluster overview': simple_vm/Cluster/cluster_overview.md
     - 'Cluster detail': simple_vm/Cluster/cluster_detail.md
   - 'SSH keys and sharing access': simple_vm/keypairs.md
+  - 'User API keys': simple_vm/userapikeys.md
   - 'Volumes': simple_vm/volumes.md
   - 'Images/Snapshots': simple_vm/snapshots.md
   - 'Backuping data': simple_vm/backup.md
