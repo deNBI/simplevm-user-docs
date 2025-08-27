@@ -215,6 +215,13 @@ You may find the list on the [detailed page](./Instance/instance_detail.md#user-
     once another user logs in with the same credentials.<br>
     For concurrent sessions, see this [guide](./guacamole.md).
 
+#### Copy-Paste related Browser Configuration
+
+If you have issues copying and pasting content, e.g. from other browser tabs into graphical applications within Guacamole check your browser settings.
+E.g. for Chromium based browsers make sure, that you have the correspondings permissions set.
+In Firefox, you can allow the interactive copying by adjusting certain settings.
+One needs to enter `about:config` in the URL-bar and enter the page. On entering one needs to accept the risk and can then type search bar to filter for specific settings. `dom.events.asyncClipboard.readText` and `dom.events.testing.asyncClipboard` need to be set to `true`. You may need to restart your browser after, so the changes are applied.
+
 ### TheiaIDE
 
 > [Eclipse Theia](https://theia-ide.org/) is an extensible platform to develop full-fledged multi-language Cloud & 
