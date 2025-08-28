@@ -149,6 +149,46 @@ of your machines.
 List of the created participant machines
 ///
 
+#### Start unassigned instances
+
+It is also possible to start a workshop instance without assigning a participant on instance creation.  
+
+You would see this section after selecting flavor and base image:
+
+![Input unassigned](./img/unassigned_instances/pick_unassigned.png)
+
+You can input how many unassigned instances you'll need and you will directly see on the creation summary if you have enough space for that amount of instances. Creation of assigned instances simultaneously will still be possible.
+
+You can click on Create Instance button to start the desired instances. 
+The unassigned instance would appear on the list.
+
+![unassigned instance](./img/unassigned_instances/unassigned_vm.png)
+/// caption
+Unassigned instance in a list
+///
+
+##### Assigning Instance to a Participant
+
+After the creation you can assign this unassigned instance to a user. Please keep in mind that every instance is only allowed one user. The to be added user has to be registered as a participant or tutor of this workshop first.
+
+To assign a participant to an instance, click on the button shown on the instance card:
+
+![assign participant button](./img/unassigned_instances/unassigned_button.png)
+/// caption
+Click on the marked button
+///
+
+You will then be redirected to a popup with a list of workshop participants:
+
+![participant popup](./img/unassigned_instances/participant_popup.png)
+
+Click on the select button to assign instance to the user. The confirmation modal will be shown and the user will be assigned once you click on 'Yes'.
+
+Assigned VMs would then be renamed according to the participant's name.
+
+![renamed vm](./img/unassigned_instances/renamed_vm.png)
+
+
 #### Inform participants about their instances
 
 Select specific or all vms and click `Send Information Mails` to inform the corresponding participants with a virtual machine about their virtual machines details and 
