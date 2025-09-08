@@ -39,6 +39,32 @@ curl -X POST http://simplevm.denbi.de/api/vms/ -d 'project_id=YOUR_PROJECT_ID' -
 ```
 <br>
 
+**Creating a VM with research environment**<br>
+You can configure your request further to start a customized virtual machine. For example, if you want to start a machine with a research environment
+image, you can write the following parameters into a single `.json` file:
+
+```shell
+{
+    "project_id": YOUR_PROJECT_ID,
+    "image_name": YOUR_RESENV_IMAGE_NAME,
+    "flavor_name": YOUR_FLAVOR_NAME,
+    "vm_name": YOUR_VM_NAME,
+    "research_environment_backend": {
+        "create_only": true,
+        "template": YOUR_RESENV_IMAGE_TEMPLATE_NAME,
+        "user_path": YOUR_USER_PATH
+    }
+}
+```
+<br>
+
+Then, you can use it to create the VM via command line:
+
+```shell
+curl -H 'Content-Type: application/json' -X POST http://simplevm.denbi.de/api/vms/ -d '@YOUR_JSON_FILE.json' -H "X-API-KEY: YOUR_API_KEY"
+```
+<br>
+
 To create a VM, you neeed additional information about your project and the resources available for your project. You can retrieve that information
 with the following commands. You will need an API Key with the `project:read` scope.
 
@@ -46,7 +72,7 @@ with the following commands. You will need an API Key with the `project:read` sc
 ```shell
 curl -X GET http://simplevm.denbi.de/api/projects/ -H "X-API-KEY: YOUR_API_KEY"
 ```
-<br>
+
 
 **Listing all available Flavors for a specific Project**<br>
 ```shell
@@ -59,6 +85,8 @@ curl -X GET http://simplevm.denbi.de/api/projects/YOUR_PROJECT_ID/flavors/ -H "X
 curl -X GET http://simplevm.denbi.de/api/projects/YOUR_PROJECT_ID/images/ -H "X-API-KEY: YOUR_API_KEY"
 
 ```
+
+For starting VMs with research environment images, you can also get the required information for `template` by looking for `resenv_template_name`.
 
 **Listing all available Snapshots for a specific Project**<br>
 ```shell
