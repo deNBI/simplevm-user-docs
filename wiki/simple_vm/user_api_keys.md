@@ -23,13 +23,13 @@ After generation, you can use the API key to access the SimpleVM API. Here are s
 
 **Stopping a VM**<br>
 ```shell
-curl -X POST http://simplevm.denbi.de/portal/api/vms/YOUR_VM_OPENSTACK_ID/action/ -d 'os_action=stop' -H "X-API-KEY: YOUR_API_KEY"
+curl -X POST http://simplevm.denbi.de/portal/api/vms/YOUR_VM_UUID/action/ -d 'os_action=stop' -H "X-API-KEY: YOUR_API_KEY"
 ```
 <br>
 
 **Resuming a VM**<br>
 ```shell
-curl -X POST http://simplevm.denbi.de/portal/api/vms/YOUR_VM_OPENSTACK_ID/action/ -d 'os_action=resume' -H "X-API-KEY: YOUR_API_KEY"
+curl -X POST http://simplevm.denbi.de/portal/api/vms/YOUR_VM_UUID/action/ -d 'os_action=resume' -H "X-API-KEY: YOUR_API_KEY"
 ```
 <br>
 
