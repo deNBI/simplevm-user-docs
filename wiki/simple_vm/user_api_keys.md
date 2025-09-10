@@ -23,19 +23,45 @@ After generation, you can use the API key to access the SimpleVM API. Here are s
 
 **Stopping a VM**<br>
 ```shell
-curl -X POST http://simplevm.denbi.de/api/vms/YOUR_VM_OPENSTACK_ID/action/ -d 'os_action=stop' -H "X-API-KEY: YOUR_API_KEY"
+curl -X POST http://simplevm.denbi.de/portal/api/vms/YOUR_VM_UUID/action/ -d 'os_action=stop' -H "X-API-KEY: YOUR_API_KEY"
 ```
 <br>
 
 **Resuming a VM**<br>
 ```shell
-curl -X POST http://simplevm.denbi.de/api/vms/YOUR_VM_OPENSTACK_ID/action/ -d 'os_action=resume' -H "X-API-KEY: YOUR_API_KEY"
+curl -X POST http://simplevm.denbi.de/portal/api/vms/YOUR_VM_UUID/action/ -d 'os_action=resume' -H "X-API-KEY: YOUR_API_KEY"
 ```
 <br>
 
 **Creating a VM in a Project**<br>
 ```shell
-curl -X POST http://simplevm.denbi.de/api/vms/ -d 'project_id=YOUR_PROJECT_ID' -d 'image_name=YOUR_IMAGE_NAME' -d 'flavor_name=YOUR_FLAVOR_NAME' -d 'vm_name=YOUR_VM_NAME' -H "X-API-KEY: YOUR_API_KEY"
+curl -X POST http://simplevm.denbi.de/portal/api/vms/ -d 'project_id=YOUR_PROJECT_ID' -d 'image_name=YOUR_IMAGE_NAME' -d 'flavor_name=YOUR_FLAVOR_NAME' -d 'vm_name=YOUR_VM_NAME' -H "X-API-KEY: YOUR_API_KEY"
+```
+<br>
+
+**Creating a VM with research environment**<br>
+You can configure your request further to start a customized virtual machine. For example, if you want to start a machine with a research environment
+image, you can write the following parameters into a single `.json` file:
+
+```shell
+{
+    "project_id": YOUR_PROJECT_ID,
+    "image_name": YOUR_RESENV_IMAGE_NAME,
+    "flavor_name": YOUR_FLAVOR_NAME,
+    "vm_name": YOUR_VM_NAME,
+    "research_environment_backend": {
+        "create_only": true,
+        "template": YOUR_RESENV_IMAGE_TEMPLATE_NAME,
+        "user_path": YOUR_USER_PATH
+    }
+}
+```
+<br>
+
+Then, you can use it to create the VM via command line:
+
+```shell
+curl -H 'Content-Type: application/json' -X POST http://simplevm.denbi.de/portak/api/vms/ -d '@YOUR_JSON_FILE.json' -H "X-API-KEY: YOUR_API_KEY"
 ```
 <br>
 
@@ -44,25 +70,27 @@ with the following commands. You will need an API Key with the `project:read` sc
 
 **Listing all Projects in which you are a Member or Administrator**<br>
 ```shell
-curl -X GET http://simplevm.denbi.de/api/projects/ -H "X-API-KEY: YOUR_API_KEY"
+curl -X GET http://simplevm.denbi.de/portal/api/projects/ -H "X-API-KEY: YOUR_API_KEY"
 ```
-<br>
+
 
 **Listing all available Flavors for a specific Project**<br>
 ```shell
-curl -X GET http://simplevm.denbi.de/api/projects/YOUR_PROJECT_ID/flavors/ -H "X-API-KEY: YOUR_API_KEY"
+curl -X GET http://simplevm.denbi.de/portal/api/projects/YOUR_PROJECT_ID/flavors/ -H "X-API-KEY: YOUR_API_KEY"
 
 ```
 
 **Listing all available Images for a specific Project**<br>
 ```shell
-curl -X GET http://simplevm.denbi.de/api/projects/YOUR_PROJECT_ID/images/ -H "X-API-KEY: YOUR_API_KEY"
+curl -X GET http://simplevm.denbi.de/portal/api/projects/YOUR_PROJECT_ID/images/ -H "X-API-KEY: YOUR_API_KEY"
 
 ```
 
+For starting VMs with research environment images, you can also get the required information for `template` by looking for `resenv_template_name`.
+
 **Listing all available Snapshots for a specific Project**<br>
 ```shell
-curl -X GET http://simplevm.denbi.de/api/projects/YOUR_PROJECT_ID/snapshots/images/ -H "X-API-KEY: YOUR_API_KEY"
+curl -X GET http://simplevm.denbi.de/portal/api/projects/YOUR_PROJECT_ID/snapshots/images/ -H "X-API-KEY: YOUR_API_KEY"
 
 ```
 <br>
