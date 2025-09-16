@@ -213,7 +213,7 @@ Afterward, you can use the extended volume.
 
 ###  Ext4 formatted filesystem
 
-Don't mount the volume. Get the `device_name` of your volume with:
+Get the `device_name` of your volume with:
 
 ```shell
 lsblk -o NAME,SIZE,MOUNTPOINT,FSTYPE,TYPE | egrep -v "^loop"
@@ -225,4 +225,3 @@ To increase the volume capacity, run:
 sudo resize2fs /dev/device_name
 ```
 
-Now you can mount the volume.
