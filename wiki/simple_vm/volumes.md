@@ -195,8 +195,8 @@ Your volume gets mounted, every time you restart your vm, under `/vol/RENAME_ME`
 If you have a volume and want to increase the volume size, you can do this at the volume overview.
 
 
-!!! caution "Volume must be available"
-    The volume has to have the status `available`.
+!!! caution "Volume must be available or in-use"
+    The volume has to have the status `available` or `in-use`.
 
 After you extended your volume, attach the volume to your vm.
 Depending on the filesystem you use on your volume, you need different procedures to make the new capacity available. 
