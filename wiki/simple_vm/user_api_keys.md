@@ -106,7 +106,7 @@ curl -H 'Content-Type: application/json' -X POST http://simplevm.denbi.de/portak
 
 <br>
 
-```
+
 <br>
 For more API endpoints, please refer to [this page](http://simplevm.denbi.de/portal/api/docs/).
-```
+
