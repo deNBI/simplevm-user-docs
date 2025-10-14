@@ -180,6 +180,15 @@ After logging in, choose a keyboard layout.
 
 ![guacamole_keyboard_layout](./img/customization/guacamole_keyboard_layout.png)
 
+#### Known Issues
+
+???+ info "Problems with connection after installation of updates"
+    In case the shown dialogue is visible to you, restarting the virtual machine can fix the access to Guacamole.
+![update_issues](./img/guacamole/update_guacamole.png)
+
+Automatic or manually triggered updates on the machines can cause problems with Guacamole. If you see a message like the one in the screenshot above, it means that the connection to the Guacamole service is not possible after updating packages and/or kernel versions of your VM's operating system.
+Restarting the virtual machine, either via the graphical interface in SimpleVM or by sending a reboot command on the VM command line, will resolve the issue. Guacamole will be usable again as usual after restarting the VM.
+
 #### Login credentials
 
 Use the following credentials:
