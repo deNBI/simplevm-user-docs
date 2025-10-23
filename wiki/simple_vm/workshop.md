@@ -275,5 +275,14 @@ the de.NBI Cloud Portal only stores the public key.
 
 ## Troubleshooting problems
 
+### Updates on Guacamole based VMs
+![update_issues](./img/guacamole/update_guacamole.png)
+
+Automatic or manually triggered updates on the machines can cause problems with Guacamole. If you see a message like the one in the screenshot above, it means that the connection to the Guacamole service is not possible after updating packages and/or kernel versions of your VM's operating system.
+Restarting the virtual machine, either via the graphical interface in SimpleVM or by sending a reboot command on the VM command line, will resolve the issue. Guacamole will be usable again as usual after restarting the VM.
+
+
+### Contact
+
 If you experience troubles, have feedback, or have a special request, 
 contact us at [cloud-helpdesk@denbi.de](mailto:cloud-helpdesk@denbi.de).
