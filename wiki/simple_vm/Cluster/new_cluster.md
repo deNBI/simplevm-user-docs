@@ -7,13 +7,13 @@ or you don't belong to a SimpleVM project.
 A message informs you if you can't start a cluster. This can happen if:
 
 - You haven't enough resources:
-    - Delete running virtual machines or clusters to free resources.
-    - An administrator of your project can request more resources.
+  - Delete running virtual machines or clusters to free resources.
+  - An administrator of your project can request more resources.
 - Members of your project may not launch virtual machines:
-    - Ask an administrator of your project to start a cluster for you.
-    - Ask an administrator of your project to change the appropriate setting.
+  - Ask an administrator of your project to start a cluster for you.
+  - Ask an administrator of your project to change the appropriate setting.
 
-Basically, the handling of starting a new cluster is similar to that of a [single instance](../Instance/create_instance.md).    
+Basically, the handling of starting a new cluster is similar to that of a [single instance](../Instance/create_instance.md).
 
 ## Resource overview
 
@@ -38,7 +38,6 @@ Choose the flavor of your master node.
 Click on a tab to switch between flavor types or use the filter to search by name.
 A flavor sets the resources of your virtual machine.<br>
 
-
 ### About ephemeral flavors
 
 Ephemeral flavors offer extra disk space.
@@ -52,10 +51,10 @@ If you need to persist data from an ephemeral, create a backup on a volume.
 See the [Best practices for data backup](../backup.md) wiki page for more information.
 
 ???+ danger "Backup important data from an ephemeral"
-    Ephemeral storage is a fleeting storage.
-    All data will be irretrievably lost when you delete your vm.
-    If you need to persist data from an ephemeral, create a backup on a volume.
-    See the [Best practices for data backup](../backup.md) wiki page for more information.
+Ephemeral storage is a fleeting storage.
+All data will be irretrievably lost when you delete your vm.
+If you need to persist data from an ephemeral, create a backup on a volume.
+See the [Best practices for data backup](../backup.md) wiki page for more information.
 
 ## Select an image
 
@@ -69,35 +68,62 @@ Click on a tab to switch between them or use the filter to search by name.<br>
 For more information about images and snapshots, see [Images and snapshots](../snapshots.md).
 
 ???+ info "Worker node image"
-    All your worker nodes start with the same image you choose for your master node.
+All your worker nodes start with the same image you choose for your master node.
 
-## Configure your worker batches
+## (Optional) Shared Cluster Volume
+
+![select_shared_vol](../img/new_cluster/shared_vol.png)
+
+You can create a new volume or select an existing one.  
+This volume will be shared between your master and worker nodes as an NFS share, mounted at `/vol/spool`.
+
+## Worker Batch Definitions
 
 ![select_worker_batch](../img/new_cluster/worker_flavor.png)
 
 A worker batch bundles all worker nodes of the same flavor.
-Each worker batch has its own number.
 You can have as many batches as you have resources and flavors available.<br>
-Click the batches tab to switch between batches.
 
-Below one can see the new resource usage which results in the chosen Batch configurations.
-To save a certain batch configuration and add another batch, one has to click on the "Save batch"-button that is next to the input for the number of workers of a certain flavor type.
+### Batch Tabs
 
-### Select flavor and count for a worker batch
+- Each batch can be configured separately.
+- Use the **Add Batch** button to create additional batches.
 
-Select the flavor for a worker batch and set the count of wanted workers.
-Depending on how many resources you have available in your project, and the master and worker flavor 
-you selected, you can start a limited worker count for the batch.
+### Batch Flavor Selection
 
-### Add a worker batch
+- Choose a flavor for each batch: **Standard**, **High Memory**, or **GPU** flavors.
+- Each flavor shows its specifications:
+  - **vCPUs**
+  - **RAM**
+  - **Root disk size**
+- **Note:** You can only select flavors approved for your project. If a flavor is not displayed, resources may be exhausted or unavailable. Consider requesting adjustments if more resources are needed.
 
-Click `Add Worker Batch` to add a new worker batch.
-The new numbered batch appears in the tab.<br>
-Select the flavor and worker count for this batch.
+### Volume Configuration
 
-### Remove a worker batch
+- For each batch, you can define temporary volumes that are mounted on each worker:
+  - Specify the **mount path** (e.g., `/vol/data`)
+  - Specify the **volume size**
+- For every volume configuration entry in the batch, a **temporary volume** is created for each worker.
+- When a worker is deleted, its corresponding volumes are automatically removed.
 
-Click `Remove Worker Batch` to remove the selected worker batch from your cluster configuration.
+### Selected Batch Volume Configs
+
+- Lists the volumes added to the batch with their **storage size** and **mount path**.
+- Volumes can be removed with the **Remove** action.
+
+### Worker Count
+
+- Specify the number of workers in the batch (max depends on available resources).
+
+### Resource Usage Summary
+
+- Shows the currently used resources and the additional resources required for the current cluster configuration
+  - **VMs**
+  - **RAM [GiB]**
+  - **CPU cores**
+  - **Number of volumes**
+  - **Volume storage [GiB]**
+  - **GPUs**
 
 ## Grant access for members
 
