@@ -7,11 +7,11 @@ or you don't belong to a SimpleVM project.
 A message informs you if you can't start a cluster. This can happen if:
 
 - You haven't enough resources:
-  - Delete running virtual machines or clusters to free resources.
-  - An administrator of your project can request more resources.
+    - Delete running virtual machines or clusters to free resources.
+    - An administrator of your project can request more resources.
 - Members of your project may not launch virtual machines:
-  - Ask an administrator of your project to start a cluster for you.
-  - Ask an administrator of your project to change the appropriate setting.
+    - Ask an administrator of your project to start a cluster for you.
+    - Ask an administrator of your project to change the appropriate setting.
 
 Basically, the handling of starting a new cluster is similar to that of a [single instance](../Instance/create_instance.md).
 
@@ -51,10 +51,10 @@ If you need to persist data from an ephemeral, create a backup on a volume.
 See the [Best practices for data backup](../backup.md) wiki page for more information.
 
 ???+ danger "Backup important data from an ephemeral"
-Ephemeral storage is a fleeting storage.
-All data will be irretrievably lost when you delete your vm.
-If you need to persist data from an ephemeral, create a backup on a volume.
-See the [Best practices for data backup](../backup.md) wiki page for more information.
+    Ephemeral storage is a fleeting storage.
+    All data will be irretrievably lost when you delete your vm.
+    If you need to persist data from an ephemeral, create a backup on a volume.
+    See the [Best practices for data backup](../backup.md) wiki page for more information.
 
 ## Select an image
 
@@ -68,7 +68,7 @@ Click on a tab to switch between them or use the filter to search by name.<br>
 For more information about images and snapshots, see [Images and snapshots](../snapshots.md).
 
 ???+ info "Worker node image"
-All your worker nodes start with the same image you choose for your master node.
+    All your worker nodes start with the same image you choose for your master node.
 
 ## (Optional) Shared Cluster Volume
 
