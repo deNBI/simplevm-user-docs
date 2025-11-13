@@ -117,7 +117,7 @@ Attaching a new volume for particpant machines
 
 A new volume will be created and attached for each participant machine with the given configurations.
 
-![attach-existing-volume](./img/workshop/attach_existing_volume.jpg)
+![attach-existing-volume](./img/workshop/attach_existing_volume.png)
 /// caption
 Attaching an existing volume for particpant machines
 ///

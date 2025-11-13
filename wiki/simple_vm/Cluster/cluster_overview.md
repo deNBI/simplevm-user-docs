@@ -35,9 +35,10 @@ A list with connection information is shown below, depending on your cluster con
 
 To expand your cluster and add more workers, click `Scale Cluster up`.
 
-![scale-up](../img/cluster_overview/scale_up_modal.png)
+![scale-up](../img/cluster_overview/scale-up.png)
 
 A modal opens where you can specify the batch you want to expand or add a new worker batch.
+You can also modify the volume configurations for worker batches here; however, there must be no active workers in the batch to do so.
 Click `Add new Worker Batch` to add a new worker batch where you can specify the flavor, and the worker number.
 <br>
 <br>
