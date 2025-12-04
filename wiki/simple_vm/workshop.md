@@ -117,7 +117,7 @@ Attaching a new volume for particpant machines
 
 A new volume will be created and attached for each participant machine with the given configurations.
 
-![attach-existing-volume](./img/workshop/attach_existing_volume.jpg)
+![attach-existing-volume](./img/workshop/attach_existing_volume.png)
 /// caption
 Attaching an existing volume for particpant machines
 ///
@@ -274,6 +274,15 @@ the de.NBI Cloud Portal only stores the public key.
     Starting virtual machines for your participants requires a public key from every administrator.
 
 ## Troubleshooting problems
+
+### Updates on Guacamole based VMs
+![update_issues](./img/guacamole/update_guacamole.png)
+
+Automatic or manually triggered updates on the machines can cause problems with Guacamole. If you see a message like the one in the screenshot above, it means that the connection to the Guacamole service is not possible after updating packages and/or kernel versions of your VM's operating system.
+Restarting the virtual machine, either via the graphical interface in SimpleVM or by sending a reboot command on the VM command line, will resolve the issue. Guacamole will be usable again as usual after restarting the VM.
+
+
+### Contact
 
 If you experience troubles, have feedback, or have a special request, 
 contact us at [cloud-helpdesk@denbi.de](mailto:cloud-helpdesk@denbi.de).

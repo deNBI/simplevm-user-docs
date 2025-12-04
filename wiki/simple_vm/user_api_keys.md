@@ -7,9 +7,13 @@ Using API keys, you can access SimpleVM features through your terminal or progra
 
 ## Generating API Keys
 
-![generate_api_key](img/generate_api_key.png)
+API keys are generated per project. You can access VMs of a project with the corresponding project API key. You can see your API keys in the project overview by switching to the API Key tab view.
 
-You can generate an API key using the corresponding action at the bottom of the API keys view on your profile page.
+![project_api_keys](img/project_overview_api_keys_tab.png)
+
+You can generate an API key using the corresponding action at the bottom of the API keys view.
+
+![generate_api_key](img/generate_api_key.png)
 
 You will be asked to select one or more scopes, select at least one scope to create an API key. The generated API key will only have access to the actions regarding the selected scopes, e.g. you can list your machines with a key with vm:read scope, but you cannot start any new machine with it.
 

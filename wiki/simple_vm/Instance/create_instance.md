@@ -1,4 +1,8 @@
 # Starting a virtual machine
+???+ warning "Unix name"
+    You can only start virtual machines with a valid unix name. You can configure and confirm your unix name
+    in your profile page. This name is used as username for all virtual machines which you have access to, 
+    either created by yourself or granted access by another user.
 
 To start a virtual machine, you need to be a member of a SimpleVM project.
 If you can't see the "Create Instance” menu item in the sidebar on the left, you either need to reload the page, you are not member of a SimpleVM project or the administrators of the project do not allow non-administrators to start machines on their own.
