@@ -57,7 +57,7 @@ you initially started the virtual machine can access it and decrypt the data the
 Due to ever-increasing, easily available computing capacities and possible future developments in the field of quantum computing, a minimum key length in bits must be observed when using SSH key pairs. We encourage you to use secure keytypes in combination with recommended bit-lengths to give you an higher level of security in daily use. When creating keypairs within SimpleVM, the recommendations stated below are met by our keypair-generation mechanism. When entering own key-pairs into the input field that do not meet these security recommendations, you will get shown a warning.
 
 ##### 1. RSA
-- **Recommended Bit Length**: At least 2048 bits, but ideally 4096 bits.
+- **Recommended Bit Length**: At least the default 3072 bits, but ideally 4096 bits.
 
 - **Creation**:
   ```bash
