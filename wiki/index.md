@@ -67,4 +67,4 @@ Frequently asked questions.
 
 If you are using **SimpleVM** you can contact the **Cloud-Portal Helpdesk**. For **Openstack-Projects** please always contact the administrators of the cloud-site your project is allocated to, first - the same holds for Kubernetes-projects.
 
-One does get an overview of all support addresses [here](https://cloud.denbi.de/support/).   
+If your project is hosted on the de.NBI Cloud, you can access a list of all the support addresses [here](https://cloud.denbi.de/support/).   
