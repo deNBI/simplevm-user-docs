@@ -63,7 +63,14 @@ Upon submitting the workflow form, you will be automatically redirected to the W
 The workshop overview page
 ///
 
+![workshop-overview](./img/workshop/workflow.png)
+///
+Step by step on the overview tab. Here you can see our recommended step for a smooth workshop. Further information on how to start a workshop can be found on this page or you can click on each step's respective wiki links.
+///
 ### Participants and Tutors
+
+#### Template
+Participants need a template virtual machine from which workshop instances will be based on. 
 
 #### Registration
 You can open the registration for the workshop via the `Create Invitation` button.
@@ -198,6 +205,16 @@ how to access it.<br>
 ???+ question "Who sends the E-Mail and who gets it?"
     The [cloud@denbi.de](mailto:cloud@denbi.de) address sends an E-Mail to the preferred E-Mail address of each
     participant. Each user can change their preferred E-Mail address on their [profile page](../simple_vm/keypairs.md#key-handling-on-profile-page).
+
+#### Send additional information to participants about their instances
+
+![custom mail button](./img/workshop/custom_mail_button.png)
+
+In addition to `Send Information Mails` which send a templated email, you can inform participants using a fully customized message by clicking `Send Custom Mails`. This opens the email modal where you can define your own subject and message body. The editor supports predefined keys that can be used as variables (for example, instance details or access information).
+
+![custom mail modal](./img/workshop/custom_mail_modal.png)
+
+
 
 ### Clean up a workshop
 Select the workshop you want to end and click `Delete Workshop`.
