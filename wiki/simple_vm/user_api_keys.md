@@ -31,10 +31,10 @@ After generation, you can use the API key to access the SimpleVM API. Here are s
 To create a VM, you neeed additional information about your project and the resources available for your project. You can retrieve that information
 with the following commands. You will need an API Key with the `project:read` scope.
 
-**Listing the Project for which the API Key was generated**<br>
+**Showing the Project for which the API Key was generated**<br>
 
 ```shell
-curl -X GET https://simplevm.denbi.de/portal/api/projects/ -H "X-API-KEY: YOUR_API_KEY"
+curl -X GET https://simplevm.denbi.de/portal/api/projects/api-key/ -H "X-API-KEY: YOUR_API_KEY"
 ```
 
 **Listing all available Flavors for a specific Project**<br>
@@ -50,10 +50,10 @@ curl -X GET https://simplevm.denbi.de/portal/api/projects/YOUR_PROJECT_ID/flavor
 curl -X GET https://simplevm.denbi.de/portal/api/projects/YOUR_PROJECT_ID/images/ -H "X-API-KEY: YOUR_API_KEY"
 
 ```
-**Listing all VMs in the Project for which the API Key was generated**<br>
+**Listing all available VMs in the Project for which the API Key was generated**<br>
 
 ```shell
-curl -X GET https://simplevm.denbi.de/portal/api/vms/ -H "X-API-KEY: YOUR_API_KEY"
+curl -X GET https://simplevm.denbi.de/portal/api/vms/api-key/ -H "X-API-KEY: YOUR_API_KEY"
 ```
 
 For starting VMs with research environment images, you can also get the required information for `template` by looking for `resenv_template_name`.
