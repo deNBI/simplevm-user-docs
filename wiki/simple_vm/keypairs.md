@@ -35,6 +35,14 @@ This means the following things:
    Therefore, once you started your virtual machine, **no one but the people you granted access** can change the 
    public keys on your virtual machine.
 
+
+You have to set a public key on your profile page when you want to start a virtual machine. 
+After launching a vm, only the private key corresponding to the public key set on your profile page when 
+you initially started the virtual machine can access it and decrypt the data the vm sends you.<br>
+**You lose the private key, you lose access.**
+
+### On Key Pair Security
+
 ???+ warning "On key pair security"
     *Every* padlock design has an opening mechanism. 
     Therefore, no padlock in existence can guarantee you 100% security, 
@@ -43,10 +51,48 @@ This means the following things:
     you good enough security with the state of the current collective knowledge. 
     They **don't** and **can't** guarantee you good enough security for every future to come.
 
-You have to set a public key on your profile page when you want to start a virtual machine. 
-After launching a vm, only the private key corresponding to the public key set on your profile page when 
-you initially started the virtual machine can access it and decrypt the data the vm sends you.<br>
-**You lose the private key, you lose access.**
+
+#### Recommended Key Types and Bit Lengths
+
+???+ info "On bit length recommendations"
+    The recommendations we have listed correspond to or exceed the recommendations of the BSI (as of January 2025). Detailed technical guidelines on cryptographic procedures can be found [here](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR02102/BSI-TR-02102.pdf?__blob=publicationFile)
+    
+
+Due to ever-increasing, easily available computing capacities and possible future developments in the field of quantum computing, a minimum key length in bits must be observed when using SSH key pairs. We encourage you to use secure keytypes in combination with recommended bit-lengths to give you an higher level of security in daily use. When creating keypairs within SimpleVM, the recommendations stated below are met by our keypair-generation mechanism. When entering own key-pairs into the input field that do not meet these security recommendations, you will get shown a warning.
+
+##### 1. RSA
+- **Recommended Bit Length**: At least the default 3072 bits, but ideally 4096 bits.
+
+- **Creation**:
+  ```bash
+  ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+  ```
+
+##### 2. ECDSA
+- **Recommended Bit Length**: At least 384 bits, typically using the `ecdsa-sha2-nistp384` or higher.
+- **Creation**:
+  ```bash
+  ssh-keygen -t ecdsa -b 521 -C "your_email@example.com"
+  ```
+
+##### 3. Ed25519
+- **Recommended Bit Length**: Fixed at around 256 bits due to its elliptic curve algorithm.
+- **Creation**:
+  ```bash
+  ssh-keygen -t ed25519 -C "your_email@example.com"
+  ```
+
+
+#### Checking existing keys
+One can check the bit-length of an existing keypair with the following command:
+```bash
+ssh-keygen -l -f KEYFILE_PRIVATE_OR_PUBLIC
+```
+The output will be similar to the following, holding the bit-length of the key, the fingerprint of the key as well as the key-type itself.
+```
+256 SHA256:XXXXa56TXtoC6/h00ANJ7JRBnWo0ja04SSz38ZVOsZs user@system (ECDSA)
+```
+
 
 ### Permissions
 

@@ -19,6 +19,8 @@ You will be asked to select one or more scopes, select at least one scope to cre
 
 The Own Objects Only option is set on default. Deselecting it means that you will be able to access everything within your permissions, including virtual machines or volumes created by other users. Only deselect this option when you are sure that you won't affect important data with your key.
 
+You also need to enter an expiry date for your API key. You can use the buttons on the side to quick select a date after certain days.
+
 The generated key is displayed at the top of the API keys table. Since it contains authentication information, we will not store the key in the database. Please save the key somewhere safe and handle it with care. Should you fear that an API key is leaked or otherways compromised, simply delete it from the table.
 
 ## Using API Keys

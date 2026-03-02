@@ -63,3 +63,8 @@ The Tutorials section introduces a few technologies and approaches which can be 
 
 Frequently asked questions.
 
+## General Information on support requests
+
+If you are using **SimpleVM** you can contact the **Cloud-Portal Helpdesk**. For **Openstack-Projects** please always contact the administrators of the cloud-site your project is allocated to, first - the same holds for Kubernetes-projects.
+
+If your project is hosted on the de.NBI Cloud, you can access a list of all the support addresses [here](https://cloud.denbi.de/support/).   
