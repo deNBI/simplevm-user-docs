@@ -244,3 +244,36 @@ A LifeScience login prompt appears if you haven't already logged in with your Li
 Now you can work with Theia IDE by web browser.
 
 ![theiaide_resenv](./img/customization/theiaide_resenv.png)
+
+## Public Services (beta)
+
+With SimpleVM Services, you may share a web application running on your virtual machine with other users.
+This is useful if you want to make a tool, dashboard, documentation page, or other browser-based application available without requiring other users to log in to your virtual machine directly.
+
+In contrast to predefined [Research environments](#research-environments), Services are not limited to a fixed set of applications.
+Instead, they allow you to expose your own web-based application running on the virtual machine through SimpleVM.
+Your web application must be available and listening on **Port 3838**.
+
+### Share a service from your VM
+
+To use Services, first start a virtual machine and deploy your web application on it.
+Afterward, you may configure the service in SimpleVM and enable or disable authorization (see below) for it.
+Once the service is available, other users may access it through the generated web link.
+
+This makes it easier to share tools developed on a virtual machine, for example for demonstrations, collaboration, or internal project use.
+
+### Access and authentication
+
+Access to a shared service still requires authentication. Your research environment is by default only accessible by the owner and SimpleVM users which have to be selected manually.
+If you disable authorization on your research environment, everyone with the link can access your research environment.
+Users must still verify their identity before they can use the service, for example via Google or an institutional account (LifeScience).
+This helps protect the underlying resources while still allowing services to be shared conveniently.
+
+### Example applications
+
+To help you test the Services feature yourself, we provide two example applications. You can deploy these two example services on a newly created instance. Choose the base image and the webservice research environment when creating the instance.
+
+- [Jekyll example application](DUMMY_LINK_JEKYLL)
+- [Shiny example application](DUMMY_LINK_SHINY)
+
+Each repository contains a README file with instructions on how to deploy and test the example application.
