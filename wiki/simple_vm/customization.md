@@ -244,3 +244,41 @@ A LifeScience login prompt appears if you haven't already logged in with your Li
 Now you can work with Theia IDE by web browser.
 
 ![theiaide_resenv](./img/customization/theiaide_resenv.png)
+
+### Webservices (beta)
+
+This feature is currently in its testing phase. If you're interested in trying it out, feel free to [reach out to us](mailto:cloud-helpdesk@denbi.de)!
+
+With SimpleVM Services, you may share a web application running on your virtual machine with other users.
+This is useful if you want to make a
+
+- tool,
+- dashboard,
+- documentation page,
+- or other browser-based applications
+
+available without requiring other users to log in to your VM directly.
+
+In contrast to predefined *Research environments*, Services are not limited to a fixed set of applications.
+Instead, they allow you to expose your own web-based application running on the virtual machine through SimpleVM.
+
+#### Setup in SimpleVM
+
+- Go to *Create Instance*
+- Select the _base image_
+- Select _Web Services_ in Research Environments
+
+To use Services in SimpleVM, create an instance and select the _base image_ and select "Webservice" as a research environment. Afterward, you may configure the service in SimpleVM and enable or disable authorization (public access) for it. Once the service is available, other users may access it through the generated web link.
+Your service will be available once your application is running on the specified port on your VM.
+
+#### Access and authentication
+
+Access to a shared service still requires authentication via Life Science Login (LS AAI). Users must verify their identity before they can use the service, for example via Google or an institutional account. This helps protect the underlying resources while still allowing services to be shared conveniently.
+
+#### Example applications
+
+To help you test the Services feature yourself, we provide this example application:
+
+- [Shiny example application](LINK_SHINY)
+
+Each repository contains a README file with instructions on how to deploy and test the example application in SimpleVM.
