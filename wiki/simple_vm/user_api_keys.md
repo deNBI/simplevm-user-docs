@@ -53,7 +53,7 @@ curl -X GET https://simplevm.denbi.de/portal/api/projects/YOUR_PROJECT_ID/images
 **Listing all available VMs in the Project for which the API Key was generated**<br>
 
 ```shell
-curl -X GET https://simplevm.denbi.de/portal/api/vms/by-sapi-key/ -H "X-API-KEY: YOUR_API_KEY"
+curl -X GET https://simplevm.denbi.de/portal/api/vms/by-api-key/ -H "X-API-KEY: YOUR_API_KEY"
 ```
 
 For starting VMs with research environment images, you can also get the required information for `template` by looking for `resenv_template_name`.
