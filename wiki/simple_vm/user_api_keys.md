@@ -41,15 +41,14 @@ curl -X GET https://simplevm.denbi.de/portal/api/projects/by-api-key/ -H "X-API-
 
 ```shell
 curl -X GET https://simplevm.denbi.de/portal/api/projects/YOUR_PROJECT_ID/flavors/ -H "X-API-KEY: YOUR_API_KEY"
-
 ```
 
 **Listing all available Images for a specific Project**<br>
 
 ```shell
 curl -X GET https://simplevm.denbi.de/portal/api/projects/YOUR_PROJECT_ID/images/ -H "X-API-KEY: YOUR_API_KEY"
-
 ```
+
 **Listing all available VMs in the Project for which the API Key was generated**<br>
 
 ```shell
@@ -66,6 +65,32 @@ curl -X GET https://simplevm.denbi.de/portal/api/projects/YOUR_PROJECT_ID/snapsh
 
 <br>
 
+**Listing all available Volumes for your API Key Project**<br>
+
+```shell
+curl -X GET https://simplevm.denbi.de/portal/api/volumes/by-api-key/ -H "X-API-KEY: YOUR_API_KEY"
+```
+
+**Creating a Volume in your API Key Project**<br>
+
+```shell
+curl -X POST https://simplevm.denbi.de/portal/api/volumes/ -H "X-API-KEY: YOUR_API_KEY" -d 'project_id=YOUR_PROJECT_ID' -d 'storage=YOUR_VOLUME_STORAGE' -d 'name=YOUR_VOLUME_NAME'
+```
+
+**Deleting a Volume in your API Key Project**<br>
+
+```shell
+curl -X DELETE https://simplevm.denbi.de/portal/api/volumes/UUID_OF_YOUR_VOLUME/ -H "X-API-KEY: YOUR_API_KEY"
+```
+
+**Performing other actions on a Volume in your API Key Project**<br>
+
+```shell
+curl -X POST https://simplevm.denbi.de/portal/api/volumes/UUID_OF_YOUR_VOLUME/action/ -H "X-API-KEY: YOUR_API_KEY" -d 'os_action=VOLUME_ACTION'
+```
+
+<br>
+
 **Creating a VM in a Project**<br>
 
 ```shell
@@ -78,15 +103,11 @@ curl -X POST https://simplevm.denbi.de/portal/api/vms/ -d 'project_id=YOUR_PROJE
 curl -X POST https://simplevm.denbi.de/portal/api/vms/YOUR_VM_UUID/action/ -d 'os_action=stop' -H "X-API-KEY: YOUR_API_KEY"
 ```
 
-<br>
-
 **Resuming a VM**<br>
 
 ```shell
 curl -X POST https://simplevm.denbi.de/portal/api/vms/YOUR_VM_UUID/action/ -d 'os_action=resume' -H "X-API-KEY: YOUR_API_KEY"
 ```
-
-<br>
 
 <br>
 
@@ -108,8 +129,6 @@ image, you can write the following parameters into a single `.json` file:
 }
 ```
 
-<br>
-
 Then, you can use it to create the VM via command line:
 
 ```shell
@@ -118,7 +137,5 @@ curl -H 'Content-Type: application/json' -X POST https://simplevm.denbi.de/porta
 
 <br>
 
-
-<br>
 For more API endpoints, please refer to [this page](https://simplevm.denbi.de/portal/api/docs/).
 
