@@ -80,13 +80,33 @@ curl -X POST https://simplevm.denbi.de/portal/api/volumes/ -H "X-API-KEY: YOUR_A
 **Deleting a Volume in your API Key Project**<br>
 
 ```shell
-curl -X DELETE https://simplevm.denbi.de/portal/api/volumes/UUID_OF_YOUR_VOLUME/ -H "X-API-KEY: YOUR_API_KEY"
+curl -X DELETE https://simplevm.denbi.de/portal/api/volumes/YOUR_VOLUME_UUID/ -H "X-API-KEY: YOUR_API_KEY"
+```
+
+You can perform actions like attach, detach and extend on your volume just like in the webapp. For these actions, the scope `volume:change_state` is required.
+
+**Attaching a Volume onto a Virtual Machine in your API Key Project**<br>
+
+```shell
+curl -X POST https://simplevm.denbi.de/portal/api/volumes/YOUR_VOLUME_UUID/action/ -H "X-API-KEY: YOUR_API_KEY" -d 'os_action=attach' -d 'vm_uuid=YOUR_VM_UUID'
+```
+
+**Detaching a Volume onto a Virtual Machine in your API Key Project**<br>
+
+```shell
+curl -X POST https://simplevm.denbi.de/portal/api/volumes/YOUR_VOLUME_UUID/action/ -H "X-API-KEY: YOUR_API_KEY" -d 'os_action=detach'
+```
+
+**Extending a Volume onto a Virtual Machine in your API Key Project**<br>
+
+```shell
+curl -X POST https://simplevm.denbi.de/portal/api/volumes/YOUR_VOLUME_UUID/action/ -H "X-API-KEY: YOUR_API_KEY" -d 'os_action=extend' -d 'size=EXTEND_SIZE'
 ```
 
 **Performing other actions on a Volume in your API Key Project**<br>
 
 ```shell
-curl -X POST https://simplevm.denbi.de/portal/api/volumes/UUID_OF_YOUR_VOLUME/action/ -H "X-API-KEY: YOUR_API_KEY" -d 'os_action=VOLUME_ACTION'
+curl -X POST https://simplevm.denbi.de/portal/api/volumes/YOUR_VOLUME_UUID/action/ -H "X-API-KEY: YOUR_API_KEY" -d 'os_action=VOLUME_ACTION' -d 'other_action_parameter=OTHER_ACTION_PARAMETER'
 ```
 
 <br>
