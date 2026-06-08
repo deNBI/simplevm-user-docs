@@ -30,6 +30,7 @@ After generation, you can use the API key to access the SimpleVM API. Here are s
 
 To create a VM, you neeed additional information about your project and the resources available for your project. You can retrieve that information
 with the following commands. You will need an API Key with the `project:read` scope.
+**All the following calls, if not stated elsewhise, are scoped to the project, you have created the API key in.**
 
 **Showing the Project for which the API Key was generated**<br>
 
@@ -41,16 +42,15 @@ curl -X GET https://simplevm.denbi.de/portal/api/projects/by-api-key/ -H "X-API-
 
 ```shell
 curl -X GET https://simplevm.denbi.de/portal/api/projects/YOUR_PROJECT_ID/flavors/ -H "X-API-KEY: YOUR_API_KEY"
-
 ```
 
 **Listing all available Images for a specific Project**<br>
 
 ```shell
 curl -X GET https://simplevm.denbi.de/portal/api/projects/YOUR_PROJECT_ID/images/ -H "X-API-KEY: YOUR_API_KEY"
-
 ```
-**Listing all available VMs in the Project for which the API Key was generated**<br>
+
+**Listing all available VMs**<br>
 
 ```shell
 curl -X GET https://simplevm.denbi.de/portal/api/vms/by-api-key/ -H "X-API-KEY: YOUR_API_KEY"
@@ -66,7 +66,53 @@ curl -X GET https://simplevm.denbi.de/portal/api/projects/YOUR_PROJECT_ID/snapsh
 
 <br>
 
-**Creating a VM in a Project**<br>
+**Listing all available Volumes**<br>
+
+```shell
+curl -X GET https://simplevm.denbi.de/portal/api/volumes/by-api-key/ -H "X-API-KEY: YOUR_API_KEY"
+```
+
+**Creating a Volume**<br>
+
+```shell
+curl -X POST https://simplevm.denbi.de/portal/api/volumes/ -H "X-API-KEY: YOUR_API_KEY" -d 'project_id=YOUR_PROJECT_ID' -d 'storage=YOUR_VOLUME_STORAGE' -d 'name=YOUR_VOLUME_NAME'
+```
+
+**Deleting a Volume**<br>
+
+```shell
+curl -X DELETE https://simplevm.denbi.de/portal/api/volumes/YOUR_VOLUME_UUID/ -H "X-API-KEY: YOUR_API_KEY"
+```
+
+You can perform actions like attach, detach and extend on your volume just like in the webapp. For these actions, the scope `volume:change_state` is required.
+
+**Attaching a Volume onto a Virtual Machine - ensure that both are within the same project***<br>
+
+```shell
+curl -X POST https://simplevm.denbi.de/portal/api/volumes/YOUR_VOLUME_UUID/action/ -H "X-API-KEY: YOUR_API_KEY" -d 'os_action=attach' -d 'vm_uuid=YOUR_VM_UUID'
+```
+
+**Detaching a Volume from a Virtual Machine***<br>
+
+```shell
+curl -X POST https://simplevm.denbi.de/portal/api/volumes/YOUR_VOLUME_UUID/action/ -H "X-API-KEY: YOUR_API_KEY" -d 'os_action=detach'
+```
+
+**Extending a Volume**<br>
+
+```shell
+curl -X POST https://simplevm.denbi.de/portal/api/volumes/YOUR_VOLUME_UUID/action/ -H "X-API-KEY: YOUR_API_KEY" -d 'os_action=extend' -d 'size=EXTEND_SIZE'
+```
+
+**Performing any other actions on a volume that is associated with the project of the respective API key**<br>
+
+```shell
+curl -X POST https://simplevm.denbi.de/portal/api/volumes/YOUR_VOLUME_UUID/action/ -H "X-API-KEY: YOUR_API_KEY" -d 'os_action=VOLUME_ACTION' -d 'other_action_parameter=OTHER_ACTION_PARAMETER'
+```
+
+<br>
+
+**Creating a VM**<br>
 
 ```shell
 curl -X POST https://simplevm.denbi.de/portal/api/vms/ -d 'project_id=YOUR_PROJECT_ID' -d 'image_name=YOUR_IMAGE_NAME' -d 'flavor_name=YOUR_FLAVOR_NAME' -d 'vm_name=YOUR_VM_NAME' -H "X-API-KEY: YOUR_API_KEY"
@@ -78,15 +124,11 @@ curl -X POST https://simplevm.denbi.de/portal/api/vms/ -d 'project_id=YOUR_PROJE
 curl -X POST https://simplevm.denbi.de/portal/api/vms/YOUR_VM_UUID/action/ -d 'os_action=stop' -H "X-API-KEY: YOUR_API_KEY"
 ```
 
-<br>
-
 **Resuming a VM**<br>
 
 ```shell
 curl -X POST https://simplevm.denbi.de/portal/api/vms/YOUR_VM_UUID/action/ -d 'os_action=resume' -H "X-API-KEY: YOUR_API_KEY"
 ```
-
-<br>
 
 <br>
 
@@ -108,8 +150,6 @@ image, you can write the following parameters into a single `.json` file:
 }
 ```
 
-<br>
-
 Then, you can use it to create the VM via command line:
 
 ```shell
@@ -118,7 +158,5 @@ curl -H 'Content-Type: application/json' -X POST https://simplevm.denbi.de/porta
 
 <br>
 
-
-<br>
 For more API endpoints, please refer to [this page](https://simplevm.denbi.de/portal/api/docs/).
 
