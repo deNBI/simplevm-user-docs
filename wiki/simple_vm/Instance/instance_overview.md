@@ -2,7 +2,10 @@
 
 On the “Instance Overview” you can list virtual machines, get more information, and manage them.
 
-![layout](../img/instance_overview/instance_overview_general.png)
+![mult_assign](../img/instance_overview/mult_assign_button.png)
+/// 
+The current state of instance overview page
+///
 
 ## Layout
 
@@ -21,6 +24,15 @@ You are able to filter the shown VMs as follows:
 - When having the corresponding permissions, you can also filter by permission type: See your own machines, or also the ones you are allowed to so within your project.
 
 The list of machines is adjusted by clicking on "Apply".
+
+#### Multiple assignment of unassigned workshop VMs
+
+Tutors are able to choose multiple participants and assign them their unassigned VMs at once. On the button a modal would be shown where the available types of VMs and participants could be chosen. Once the tutor selected all participants to be assigned they can click on the Assign button.
+
+![mult_assign](../img/instance_overview/mult_assign_button.png)
+/// caption
+The multiple assignment modal
+///
 
 #### Deletion of selected machines
 
