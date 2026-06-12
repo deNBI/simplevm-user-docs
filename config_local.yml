@@ -2,6 +2,7 @@ site_name: "de.NBI Cloud Wiki"
 docs_dir: wiki
 theme:
   name: material
+  font: false
   palette:
     primary: 'teal'
     accent: 'cyan'
@@ -9,6 +10,7 @@ theme:
   favicon: 'img/simplevm_favicon.svg'
   features:
     - content.code.copy
+  custom_dir: wiki/overrides
 
 repo_name: 'deNBI/simplevm-user-docs'
 repo_url: 'https://github.com/deNBI/simplevm-user-docs'
@@ -63,3 +65,28 @@ nav:
     - 'Access a SimpleVM with Mosh' : Tutorials/Mosh/index.md
     - 'SimpleVM File Transfer' : Tutorials/File_Transfer_Methods/index.md
   - 'FAQ' : 'FAQ.md'
+
+extra_javascript:
+  - mathjax.js
+
+extra_css:
+  - assets/css/fonts.css
+  
+
+extra:
+  social:
+  - icon: fontawesome/brands/linkedin
+    link: https://www.linkedin.com/company/de-nbi/
+    name: de.NBI on LinkedIN
+  - icon: fontawesome/brands/github
+    link: https://github.com/deNBI/
+    name: de.NBI on GitHub
+  - icon: fontawesome/brands/youtube
+    link: https://www.youtube.com/channel/UCgZ5PU3CyD4c8yxxzJi130g?view_as=subscriber
+    name: de.NBI on YouTube
+  - icon: fontawesome/brands/wikipedia-w
+    link: https://en.wikipedia.org/wiki/German_Network_for_Bioinformatics_Infrastructure
+    name: de.NBI on Wikipedia
+  footer_links: 
+    - { name: "Policies", href: "https://cloud.denbi.de/about/policies/" }
+    - { name: "Imprint", href: "https://cloud.denbi.de/about/imprint/" }
