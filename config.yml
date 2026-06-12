@@ -19,6 +19,7 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to light mode
+  custom_dir: wiki/overrides
 
   logo: 'img/SimpleVM_logo_wiki.svg'
   favicon: 'img/simplevm_favicon.svg'
@@ -87,12 +88,6 @@ extra_javascript:
 
 extra:
   social:
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/denbiOffice
-      name: de.NBI on Twitter
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/denbiCloud
-      name: de.NBI Cloud on Twitter
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/de-nbi/
       name: de.NBI on LinkedIN
@@ -105,6 +100,9 @@ extra:
     - icon: fontawesome/brands/wikipedia-w
       link: https://en.wikipedia.org/wiki/German_Network_for_Bioinformatics_Infrastructure
       name: de.NBI on Wikipedia
+  footer_links: 
+  - { name: "Policies", href: "https://cloud.denbi.de/about/policies/" }
+  - { name: "Imprint", href: "https://cloud.denbi.de/about/imprint/" }
   cloud_portal_wiki_link: !ENV [CLOUD_PORTAL_WIKI_LINK, 'https://cloud.denbi.de/wiki/']
 
 nav:
