@@ -77,14 +77,10 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
-  - pymdownx.arithmatex:
-      generic: true
   - pymdownx.blocks.caption
 
 extra_javascript:
   - matomo.js
-  - mathjax.js
-  - assets/mathjax/tex-mml-chtml-mathjax-stix2.js
 
 
 extra:
