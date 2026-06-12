@@ -64,7 +64,7 @@ The workshop overview page
 ///
 
 ![workshop-overview](./img/workshop/workflow.png)
-///
+/// caption
 Step by step on the overview tab. Here you can see our recommended step for a smooth workshop. Further information on how to start a workshop can be found on this page or you can click on each step's respective wiki links.
 ///
 ### Participants and Tutors
