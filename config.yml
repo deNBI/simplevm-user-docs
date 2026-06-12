@@ -3,6 +3,7 @@ docs_dir: /srv_root/docs/wiki
 site_dir: /var/www/html/wiki
 theme:
   name: material
+  font: false
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -82,6 +83,9 @@ markdown_extensions:
 extra_javascript:
   - matomo.js
 
+extra_css:
+  - assets/css/fonts.css
+  
 
 extra:
   social:
