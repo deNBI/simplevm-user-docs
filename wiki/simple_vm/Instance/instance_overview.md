@@ -2,7 +2,10 @@
 
 On the “Instance Overview” you can list virtual machines, get more information, and manage them.
 
-![layout](../img/instance_overview/instance_overview_general.png)
+![mult_assign](../img/instance_overview/mult_assign_button.png)
+/// caption
+The current state of instance overview page
+///
 
 ## Layout
 
@@ -21,6 +24,27 @@ You are able to filter the shown VMs as follows:
 - When having the corresponding permissions, you can also filter by permission type: See your own machines, or also the ones you are allowed to so within your project.
 
 The list of machines is adjusted by clicking on "Apply".
+
+#### Multiple assignment of unassigned workshop VMs
+
+If you have several unassigned instances, you can assign them to participants in a single step instead of one by one.
+
+Click the "Assign Mutiple VMs" button to open the batch-assignment modal. The modal shows:
+
+- The available unassigned VMs, grouped by flavor and image.
+- The list of workshop participants (and tutors) who do not yet have an instance.
+
+Select the participants you want to assign, pick the VM type they should receive, and click Assign. Each selected participant is given one of the matching unassigned VMs, and the VMs are automatically renamed according to the participant's name.
+
+???+ info "Good to know"
+    - Every instance can only be assigned to one user.
+    - Users must already be registered as a participant of the workshop before they appear in the modal.
+    - If there are fewer unassigned VMs than selected participants, only as many assignments as available VMs will be made.
+
+![mult_assign](../img/instance_overview/mult_assign_button.png)
+/// caption
+The multiple assignment modal
+///
 
 #### Deletion of selected machines
 
