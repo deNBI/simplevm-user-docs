@@ -279,6 +279,7 @@ Access to a shared service still requires authentication via Life Science Login 
 
 To help you test the Services feature yourself, we provide this example application:
 
-- [Shiny example application](LINK_SHINY)
+- [Shiny example application](https://github.com/SimpleVM/simplevm-services-demo-shiny)
+- [Jekyll example application](https://github.com/SimpleVM/simplevm-services-demo-jekyll) (beta)
 
 Each repository contains a README file with instructions on how to deploy and test the example application in SimpleVM.
