@@ -71,6 +71,11 @@ Once the deletion reminder has been sent, the VM may be deleted at any time. How
 
 By following this confirmation process, we aim to ensure that only actively used VMs remain in operation, reducing unnecessary resource consumption and costs.
 
+## Monitoring
+
+![monitoring_tab](../img/instance_detail/monitoring_tab.png)
+
+This tab shows the resource usage of the virtual machine overtime.
 
 ## Volumes
 
