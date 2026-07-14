@@ -245,24 +245,32 @@ Now you can work with Theia IDE by web browser.
 
 ![theiaide_resenv](./img/customization/theiaide_resenv.png)
 
-### Webservices (beta)
+### Web Services (beta)
 
 This feature is currently in its testing phase. If you're interested in trying it out, feel free to [reach out to us](mailto:cloud-helpdesk@denbi.de)!
 
-With SimpleVM Services, you may share a web application running on your virtual machine with other users.
-This is useful if you want to make a
-
-- tool,
-- dashboard,
-- documentation page,
-- or other browser-based applications
-
-available without requiring other users to log in to your VM directly.
+With SimpleVM Services, you can make a web application running on your virtual machine public.
+This is useful if you want to make a service available without requiring other users to type in a password or any authorization.
+A Web Service could be:
+- a tool,
+- a dashboard,
+- a documentation page,
+- or any browser-based application
 
 In contrast to predefined *Research environments*, Services are not limited to a fixed set of applications.
 Instead, they allow you to expose your own web-based application running on the virtual machine through SimpleVM.
 
+#### Advantages of SimpleVM Web Services
+
+If you want to share a service online, often times you face challenges regarding the DNS and HTTPS certificates, web security and setup.
+With SimpleVM Web Services the setup becomes as easy as clicking a button. You just switch the authorization of your Research environment and enjoy:
+- No certificate handling (DNS, HTTPS)
+- Web Security Protection (rate limiting, blocking of suspicious IPs etc.)
+- Easy development workflow!
+
 #### Setup in SimpleVM
+
+INSERT PHOTO
 
 - Go to *Create Instance*
 - Select the _base image_
