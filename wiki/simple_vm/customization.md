@@ -270,11 +270,13 @@ With SimpleVM Web Services the setup becomes as easy as clicking a button. You j
 
 #### Setup in SimpleVM
 
-INSERT PHOTO
-
 - Go to *Create Instance*
 - Select the _base image_
 - Select _Web Services_ in Research Environments
+
+![webservice_resenv1](./img/customization/webservice_resenv1.png)
+
+![webservice_resenv2](./img/customization/webservice_resenv2.png)
 
 To use Services in SimpleVM, create an instance and select the _base image_ and select "Webservice" as a research environment. Afterward, you may configure the service in SimpleVM and enable or disable authorization (public access) for it. Once the service is available, other users may access it through the generated web link.
 Your service will be available once your application is running on the specified port on your VM.
