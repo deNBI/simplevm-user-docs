@@ -25,7 +25,7 @@ Some of the inputs are necessary, others are optional.
 The information that is mandatory for starting a machine is, in addition to the selection of the project in which the machine is to be started, the name of the machine, a flavor and an image.
 The available options are listed and explained below.
 
-![create-instance-part1](../img/create_instance/create-instance-part1.png)
+![create-instance-part1](../img/create_instance/create_instance_flavor_selection.png)
 
 ### Selected project
 
