@@ -96,7 +96,7 @@ Additional Workshop Tutors can be set via the Tutors Tab;
 
 #### Start virtual machines for your participants
 
-At your workshop overview select "Create new instances".
+At your workshop overview select "Create Workshop instances".
 
 ![new_instance_workshop](./img/workshop/workshop_new_instances.png)  
 
