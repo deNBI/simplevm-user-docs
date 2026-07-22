@@ -118,6 +118,7 @@ extra:
   footer_links: 
   - { name: "Policies", href: "https://cloud.denbi.de/about/policies/" }
   - { name: "Imprint", href: "https://cloud.denbi.de/about/imprint/" }
+  - { name: "Cookie Consent", href: "#__consent", new_tab: false }
   cloud_portal_wiki_link: !ENV [CLOUD_PORTAL_WIKI_LINK, 'https://cloud.denbi.de/wiki/']
 
 nav:
