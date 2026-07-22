@@ -5,7 +5,7 @@ The detail page offers more information about a virtual machine and extra action
 ## General Overview
 
 The overview of the instance detail page shows the most important information of the machine.
-This section is devided into several parts
+This section is divided into several parts
 
 ![general](../img/instance_detail/detail_general.png)
 
@@ -15,7 +15,7 @@ This part shows:
 
 - The state of the VM, i.e. whether it is active or shut down, for example.
 - The project the VM is running in - you are also able to access the corresponding project overview clicking on the name of the project.
-- OpenStack-ID: the ID of the machine in the corresponding compute center. In case you have any problems with your machine, this identifier is very helpful for the support, when contacted
+- OpenStack-ID: the ID of the machine in the corresponding compute center. In case you have any problems with your machine, this identifier is very helpful when contacting support.
 - Creation date and user who created the machine
 
 It also enables the user to perform certain actions with the machine:
@@ -88,7 +88,7 @@ For more information on volumes, see the [volume](../volumes.md) wiki page.
 
 ## Ports
 
-When enabled for the project your machine is running in, you are able to configure port ranges for the vm, so it allows connections on these ports when sending requests from machines in the same network.
+When enabled for the project your machine is running in, you are able to configure port ranges for the VM, so it allows connections on these ports when sending requests from machines in the same network.
 In the case of SimpleVM, all machines in a project are located in the same network. Machines outside this network cannot access these ports.
 You can open port ranges from port 1024 to 65535.
 The Ethernet type, the IP protocol and the start and end of the range can be specified for each range. This setting can be added to a machine with **Add**. Released port ranges can be removed again in the list below with **Remove**.
@@ -118,7 +118,7 @@ The metadata server is used to automatically configure user access and home dire
 
 You can configure the following options in the VM settings:
 
-- **Propagation Enabled**: This setting controls user synchronization. If disabled, no user-related metadata is sent to the virtual machine, and automatic user synchronization is turned off.
+- **Propagation Enabled**: This setting controls user synchronization. If disabled, no user-related metadata is sent to the virtual machine, disabling automatic user synchronization.
 - **Propagate Public Keys**: When enabled, the public keys of the VM owner and all [Privileged Ubuntu Users](#privileged-ubuntu-users) are propagated. This allows these users to access the VM using the default `ubuntu` user account, which has `sudo` (administrative) privileges.
 - **Propagate Home Users**: When enabled, the system propagates information for [Non-Privileged Home Users](#non-privileged-home-users). This triggers the automatic creation of individual home directories for these users on the VM, allowing them to have their own isolated workspace.
 
