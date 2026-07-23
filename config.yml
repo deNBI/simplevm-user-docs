@@ -101,7 +101,7 @@ extra:
     cookies:
       analytics:
         name: Matomo
-        checked: false
+        checked: true
   social:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/de-nbi/
