@@ -269,7 +269,7 @@ With SimpleVM Web Services the setup becomes as easy as clicking a button. You j
 - Easy development workflow!
 
 #### Setup in SimpleVM
-
+After you've been granted a project with the feature enabled, follow these steps for an quick and easy setup:
 - Go to *Create Instance*
 - Select the _base image_
 - Select _Web Services_ in Research Environments
@@ -283,7 +283,7 @@ Your service will be available once your application is running on the specified
 
 #### Access and authentication
 
-Access to a shared service still requires authentication via Life Science Login (LS AAI). Users must verify their identity before they can use the service, for example via Google or an institutional account. This helps protect the underlying resources while still allowing services to be shared conveniently.
+Access to a shared service currently still requires authentication via Life Science Login (LS AAI). Users must verify their identity before they can use the service, for example via Google or an institutional account. This helps protect the underlying resources while still allowing services to be shared conveniently.
 
 #### Example applications
 
