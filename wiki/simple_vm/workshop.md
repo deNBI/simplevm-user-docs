@@ -64,7 +64,7 @@ The workshop overview page
 ///
 
 ![workshop-overview](./img/workshop/workflow.png)
-///
+/// caption
 Step by step on the overview tab. Here you can see our recommended step for a smooth workshop. Further information on how to start a workshop can be found on this page or you can click on each step's respective wiki links.
 ///
 ### Participants and Tutors
@@ -195,6 +195,28 @@ Assigned VMs would then be renamed according to the participant's name.
 
 ![renamed vm](./img/unassigned_instances/renamed_vm.png)
 
+#### Multiple assignment of unassigned workshop VMs
+
+![mult_assign](../img/instance_overview/mult_assign_button.png)
+
+If you have several unassigned instances, you can assign them to participants in a single step instead of one by one.
+
+Click the "Assign Mutiple VMs" button to open the batch-assignment modal. The modal shows:
+
+- The available unassigned VMs, grouped by flavor and image.
+- The list of workshop participants (and tutors) who do not yet have an instance.
+
+Select the participants you want to assign, pick the VM type they should receive, and click Assign. Each selected participant is given one of the matching unassigned VMs, and the VMs are automatically renamed according to the participant's name.
+
+???+ info "Good to know"
+    - Every instance can only be assigned to one user.
+    - Users must already be registered as a participant of the workshop before they appear in the modal.
+    - If there are fewer unassigned VMs than selected participants, only as many assignments as available VMs will be made.
+
+![mult_assign](../img/instance_overview/mult_assign_modal.png)
+/// caption
+The multiple assignment modal
+///
 
 #### Inform participants about their instances
 
