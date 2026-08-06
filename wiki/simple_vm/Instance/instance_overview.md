@@ -2,7 +2,10 @@
 
 On the “Instance Overview” you can list virtual machines, get more information, and manage them.
 
-![layout](../img/instance_overview/instance_overview_general.png)
+![mult_assign](../img/instance_overview/mult_assign_button.png)
+/// caption
+The current state of instance overview page
+///
 
 ## Layout
 
