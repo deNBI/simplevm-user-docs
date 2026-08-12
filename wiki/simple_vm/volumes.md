@@ -48,6 +48,25 @@ One can:
 !!! info "Attaching and detaching"
     You can attach and detach volumes only to and from an active virtual machine.
 
+##### On Attachments of existing Volumes to machines
+
+When an existing volume is selected on machine start, or attached to an
+instance at a later point, automatic mounting cannot be guaranteed. Volumes
+that already exist are not re-formatted on attachment, since they may hold
+data that must be preserved. Automatic mounting only takes
+place for volumes that are freshly created during machine start.
+
+As a consequence, an existing volume that already carries a filesystem still
+needs to be [mounted manually](#mount-a-volume) before its contents become
+accessible. If no filesystem is present yet, one has to be
+[created first](#create-the-volume-file-system) — provided the volume is
+known to be empty, since formatting destroys any data it may contain.
+
+Volumes that are attached by hand to an already running instance are never
+mounted automatically, regardless of how they were originally created. In
+this case mounting is always a manual step. To persist a mount across
+reboots, refer to the [After a vm restart](#after-a-vm-restart)-section.
+
 
 ### Create the volume file system
 

@@ -108,6 +108,10 @@ You will see a selection of volumes which are queued for creation and existing v
 ![add_new_volume](../img/create_instance/new_instance_vol_new.png)
 ![add_existing_volume](../img/create_instance/new_instance_vol_ex.png)
 
+???+ info "Considerations for existing volumes an machine creation"
+    Please have in mind, that existing volumes are only attached to newly created virtual machine.
+    A mounting of the volumes can not be guaranteed. Find more information on this [in the volume wiki](../volumes.md#on-attachments-of-existing-volumes-to-machines).
+
 #### Grant access for project members
 
 Grant members of your project SSH access to your virtual machine.<br>
