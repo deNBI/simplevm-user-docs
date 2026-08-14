@@ -69,6 +69,9 @@ Step by step on the overview tab. Here you can see our recommended step for a sm
 ///
 ### Participants and Tutors
 
+???+ warning "Requirements for participants"
+    Please consider: Regardless of whether you will be hosting workshops on machines accessible via a browser (i.e., a research environment) or on machines that participants will access via SSH: In all cases, participants must set and confirm their Unix name; it will not be possible to start VMs for those participants or grant them access until the Unix name has been set.
+
 #### Template
 Participants need a template virtual machine from which workshop instances will be based on. 
 
