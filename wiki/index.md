@@ -2,6 +2,9 @@
 
 Welcome to the SimpleVM Wiki!
 
+**SimpleVM is an approved de.NBI service. Please help us improve by taking our short [user survey](https://www.surveymonkey.de/r/denbi-service?sc=bigi&tool=simplevm){target="_blank" rel="noopener norefferer"}.**
+
+
 Below you will find a brief overview of the most important features of SimpleVM.
 
 # SimpleVM
