@@ -37,6 +37,8 @@ The header of the component shows the following information on first glance:
 
 - **Machine status**
 - **Machine name**
+- **Machine Tags**
+  <br>You may add/remove your own customizable tags. Some tags might be preset.
 - **Descriptive Icons**
   <br>The icons allow you to get a quick overview of further machine configurations:  
 
