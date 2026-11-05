@@ -277,8 +277,6 @@ Additionally, you can also customize the name of the web service instance, URL s
 
 ![webservice_resenv1](./img/customization/webservice_resenv1.png)
 
-![webservice_resenv2](./img/customization/webservice_resenv2.png)
-
 Afterward, you may configure the service in SimpleVM and enable or disable **public access** for your web service in **Instance details > Web Service**. Once the service is available and public, other users may access it through the generated web link.
 Your service will be available once your application is running on the specified port (3838) on your VM.
 
