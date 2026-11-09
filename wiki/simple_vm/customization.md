@@ -250,7 +250,7 @@ Now you can work with Theia IDE by web browser.
 This feature is currently in its testing phase. If you're interested in trying it out, feel free to [reach out to us](mailto:cloud-helpdesk@denbi.de)!
 
 With SimpleVM Services, you can make a web application running on your virtual machine public.
-This is useful if you want to make a service available without requiring other users to type in a password or any authorization.
+This is useful if you want to make a service available to users without requiring an additional authorization layer.
 A Web Service could be:
 - a tool,
 - a dashboard,

@@ -37,6 +37,8 @@ The header of the component shows the following information on first glance:
 
 - **Machine status**
 - **Machine name**
+- **Machine Tags**
+  <br>To help you organise your virtual machines, you can add or remove your own customisable tags. Some tags may already be set up by SimpleVM automatically.
 - **Descriptive Icons**
   <br>The icons allow you to get a quick overview of further machine configurations:  
 
